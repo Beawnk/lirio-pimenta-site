@@ -1,0 +1,63 @@
+/* Design system da Lírio Pimenta — vindo da demo.
+   São custom properties de propósito: mudam em media query e podem ser lidas
+   em runtime. Variável SCSS aqui só serviria para o compilador. */
+:root {
+  /* Cores da marca */
+  --blue-900: #0a3c5c;
+  --blue-700: #0f5c8c; /* azul da fachada */
+  --blue-500: #1f7ab0;
+  --blue-100: #e6f1f8;
+  --gold-600: #e0a92e;
+  --gold-500: #f5c542; /* dourado / destaque */
+  --gold-100: #fdf3d4;
+  --red-500: #e63946; /* pontos de atenção */
+  --ink-900: #141a1f;
+  --ink-700: #2a343c;
+  --ink-500: #566470;
+  --ink-300: #93a1ab;
+  --line: #e4e9ed;
+  --bg: #ffffff;
+  --bg-soft: #f6f8fa;
+  --bg-tint: #eef4f8;
+  --white: #ffffff;
+  --ok: #1a9e57;
+  --wa: #25d366;
+
+  /* Tipografia */
+  --font-display: 'Poppins', system-ui, Arial, sans-serif;
+  --font-text: 'Inter', system-ui, Arial, sans-serif;
+
+  /* Espaçamento */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 64px;
+  --sp-9: 88px;
+
+  /* Raios */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-pill: 999px;
+
+  /* Sombras */
+  --sh-1: 0 1px 2px rgba(16, 40, 60, 0.06), 0 1px 3px rgba(16, 40, 60, 0.08);
+  --sh-2: 0 4px 14px rgba(16, 40, 60, 0.1);
+  --sh-3: 0 12px 34px rgba(16, 40, 60, 0.16);
+  --sh-gold: 0 8px 22px rgba(224, 169, 46, 0.34);
+
+  --container: 1220px;
+  --header-h: 74px;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+@media (max-width: 640px) {
+  :root {
+    --header-h: 64px;
+  }
+}

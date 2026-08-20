@@ -1,0 +1,135 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 13px 22px;
+  border-radius: var(--r-pill);
+  transition: 0.22s var(--ease);
+  border: 2px solid transparent;
+  white-space: nowrap;
+  line-height: 1;
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+  }
+}
+
+.btn-primary {
+  background: var(--blue-700);
+  color: #fff;
+  box-shadow: var(--sh-2);
+
+  &:hover {
+    background: var(--blue-900);
+    box-shadow: var(--sh-3);
+    transform: translateY(-2px);
+  }
+}
+
+.btn-gold {
+  background: var(--gold-500);
+  color: var(--ink-900);
+  box-shadow: var(--sh-gold);
+
+  &:hover {
+    background: var(--gold-600);
+    transform: translateY(-2px);
+  }
+}
+
+.btn-wa {
+  background: var(--wa);
+  color: #08361b;
+
+  &:hover {
+    background: #1fbe5a;
+    transform: translateY(-2px);
+  }
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--ink-900);
+  border-color: var(--line);
+
+  &:hover {
+    border-color: var(--blue-700);
+    color: var(--blue-700);
+  }
+}
+
+.btn-light {
+  background: #fff;
+  color: var(--ink-900);
+  box-shadow: var(--sh-1);
+
+  &:hover {
+    box-shadow: var(--sh-2);
+    transform: translateY(-2px);
+  }
+}
+
+.btn-sm {
+  padding: 9px 15px;
+  font-size: 0.85rem;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* Botão quadrado de ícone — header e barras de ação */
+.icon-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  color: var(--ink-700);
+  transition: 0.18s;
+  position: relative;
+  background: var(--bg-soft);
+
+  &:hover {
+    background: var(--blue-100);
+    color: var(--blue-700);
+  }
+
+  svg {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+.close-x {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  color: var(--ink-500);
+  background: var(--bg-soft);
+  transition: 0.16s;
+
+  &:hover {
+    background: var(--red-500);
+    color: #fff;
+  }
+}
+
+@media (max-width: 640px) {
+  .icon-btn {
+    width: 40px;
+    height: 40px;
+  }
+}

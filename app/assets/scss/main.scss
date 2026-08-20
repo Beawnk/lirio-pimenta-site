@@ -1,0 +1,8 @@
+/* Só o que é compartilhado entre componentes mora aqui.
+   Estilo de um bloco visual específico vive no <style scoped> do componente. */
+@use 'tokens';
+@use 'reset';
+@use 'layout';
+@use 'buttons';
+@use 'badges';
+@use 'animations';

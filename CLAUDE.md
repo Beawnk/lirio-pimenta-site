@@ -75,17 +75,26 @@ npx vitest run tests/cart.test.js -t "remove item"
 
 ## Estado atual do repositório
 
-O Nuxt está no scaffold: `app/app.vue` é um `<div>` vazio, não há páginas, componentes,
-stores nem estilos. **Nada da demo foi portado ainda.** A estrutura-alvo:
+A portagem da demo está em andamento, em etapas. **Pronto:** a casca — SCSS global
+(`app/assets/scss/`), dados (`app/data/`), `useWhatsApp`, `ProductImage`, o store `ui`
+(um painel aberto por vez + trava de scroll), header, rodapé, menu mobile, bottom nav,
+FAB do WhatsApp e o layout. **Falta:** as seções da home, o catálogo com filtros e o
+carrinho → WhatsApp — `app/pages/index.vue` ainda tem só as âncoras vazias.
 
 ```
 app/
 ├── components/     # PascalCase.vue
 ├── composables/    # useAlgumaCoisa.js
+├── data/           # catálogo estático e dados da loja (Fase A)
+├── layouts/        # default.vue
 ├── pages/          # kebab-case
 ├── stores/         # Pinia
-└── assets/scss/    # variáveis, mixins, base
+└── assets/scss/    # tokens, reset e classes compartilhadas
 ```
+
+Estilo compartilhado (`.btn`, `.container`, `.section`, `.badge`, tokens) fica no
+`main.scss`; o resto vive no `<style lang="scss" scoped>` do componente. Um pai que
+precise estilizar dentro de um filho usa `:deep()`.
 
 ---
 
