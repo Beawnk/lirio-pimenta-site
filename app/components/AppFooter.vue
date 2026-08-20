@@ -21,7 +21,7 @@ const year = computed(() => new Date().getFullYear())
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="#top" class="brand">
-            <span class="brand-mark"><img src="/img/logo.webp" alt="Lírio Pimenta" ></span>
+            <span class="brand-mark"><img src="/img/logo.png" alt="Lírio Pimenta" ></span>
             <span class="brand-text"><b>Lírio Pimenta</b><span>Vem ver</span></span>
           </a>
           <p>

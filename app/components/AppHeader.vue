@@ -31,7 +31,7 @@ const NAV = [
     <div class="container header-inner">
       <a href="#top" class="brand" aria-label="Lírio Pimenta — início">
         <span class="brand-mark has-logo">
-          <img src="/img/logo.webp" alt="Lírio Pimenta" >
+          <img src="/img/logo.png" alt="Lírio Pimenta" >
         </span>
         <span class="brand-text">
           <b>Lírio Pimenta</b>

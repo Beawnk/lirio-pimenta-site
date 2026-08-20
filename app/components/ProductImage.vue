@@ -16,7 +16,7 @@ const IMAGES = {
   tabacaria: '/img/tabacaria.webp',
   presente: '/img/presente.webp',
   pessoas: '/img/pessoas.webp',
-  logo: '/img/logo.webp',
+  logo: '/img/logo.png',
 }
 
 const props = defineProps({

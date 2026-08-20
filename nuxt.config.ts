@@ -36,6 +36,11 @@ export default defineNuxtConfig({
         { property: 'business:contact_data:phone_number', content: '+555130463033' },
       ],
       link: [
+        /* SVG para quem suporta (nítido em qualquer tamanho) e .ico como
+           reserva. O ícone é a pimenta do logo: a 16px o escudo inteiro,
+           com "Lírio Pimenta" escrito, viraria um borrão. */
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32.png' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         {

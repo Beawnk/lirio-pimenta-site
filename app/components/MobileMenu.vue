@@ -20,7 +20,7 @@ const LINKS = [
   <aside class="mmenu" :class="{ show: ui.isOpen('menu') }" aria-label="Menu">
     <div class="mmenu-head">
       <a href="#top" class="brand" @click="ui.close()">
-        <span class="brand-mark"><img src="/img/logo.webp" alt="Lírio Pimenta" ></span>
+        <span class="brand-mark"><img src="/img/logo.png" alt="Lírio Pimenta" ></span>
         <b>Lírio Pimenta</b>
       </a>
       <button class="close-x" aria-label="Fechar" @click="ui.close()">✕</button>
