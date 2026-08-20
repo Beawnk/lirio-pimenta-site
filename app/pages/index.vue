@@ -2,7 +2,7 @@
   <div>
     <span id="top" />
 
-    <HeroSection />
+    <HeroCarousel />
     <CategoryBar />
     <TrustStrip />
     <CategoryGrid />
