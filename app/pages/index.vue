@@ -2,15 +2,23 @@
   <div>
     <span id="top" />
 
-    <!-- As seções entram nas próximas etapas da portagem, na ordem da demo:
-         hero, faixa de confiança, categorias, novidades, "você entra procurando",
-         catálogo, presentes, história, loja, Instagram e faixa do WhatsApp. -->
-    <section id="categorias" class="section" />
+    <HeroSection />
+    <CategoryBar />
+    <TrustStrip />
+    <CategoryGrid />
+
+    <!-- Novidades e catálogo entram na etapa do catálogo: as duas seções
+         usam o mesmo ProductCard, então saem juntas. -->
     <section id="novidades" class="section section--soft" />
+
+    <DiscoverSection />
+
     <section id="catalogo" class="section" />
-    <section id="presentes" class="section section--tint" />
-    <section id="historia" class="section" />
-    <section id="loja" class="section" />
-    <section id="instagram" class="section section--soft" />
+
+    <GiftsSection />
+    <HistorySection />
+    <StoreSection />
+    <InstagramGrid />
+    <WhatsAppBand />
   </div>
 </template>
