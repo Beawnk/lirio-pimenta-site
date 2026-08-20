@@ -33,5 +33,7 @@ onUnmounted(() => document.removeEventListener('keydown', onKeydown))
     <CartDrawer />
     <FiltersDrawer />
     <ProductModal />
+    <CheckoutModal />
+    <ToastHost />
   </div>
 </template>

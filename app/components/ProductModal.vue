@@ -1,19 +1,35 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { findCategory } from '~/data/categories'
 import { ADDRESS } from '~/data/store-info'
+import { useCartStore } from '~/stores/cart'
 import { useCatalogStore } from '~/stores/catalog'
 import { useFavoritesStore } from '~/stores/favorites'
+import { useToastStore } from '~/stores/toast'
 import { useUiStore } from '~/stores/ui'
 import { useWhatsApp } from '~/composables/useWhatsApp'
 
+const cart = useCartStore()
 const catalog = useCatalogStore()
 const favorites = useFavoritesStore()
+const toast = useToastStore()
 const ui = useUiStore()
 const { consultLink } = useWhatsApp()
 
 const product = computed(() => catalog.selectedProduct)
 const emoji = computed(() => (product.value ? findCategory(product.value.category)?.emoji : '📦'))
+
+/* A quantidade volta para 1 a cada produto aberto */
+const qty = ref(1)
+watch(product, () => {
+  qty.value = 1
+})
+
+function addToCart() {
+  cart.add(product.value.id, qty.value)
+  toast.show(`${product.value.name} adicionado ao carrinho`)
+  ui.close()
+}
 </script>
 
 <template>
@@ -65,6 +81,21 @@ const emoji = computed(() => (product.value ? findCategory(product.value.categor
             <small>Confirme o valor na loja ou pelo WhatsApp.</small>
 
             <div class="pd-actions">
+              <div v-if="product.available" class="pd-qtyrow">
+                <span>Quantidade</span>
+                <div class="qty">
+                  <button aria-label="Diminuir" @click="qty = Math.max(1, qty - 1)">−</button>
+                  <span>{{ qty }}</span>
+                  <button aria-label="Aumentar" @click="qty = qty + 1">+</button>
+                </div>
+              </div>
+              <button
+                v-if="product.available"
+                class="btn btn-primary btn-block"
+                @click="addToCart()"
+              >
+                Adicionar ao carrinho
+              </button>
               <a
                 :href="consultLink(product.name)"
                 target="_blank"
@@ -233,6 +264,47 @@ const emoji = computed(() => (product.value ? findCategory(product.value.categor
   .ic {
     width: 18px;
     height: 18px;
+  }
+}
+
+.pd-qtyrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 6px;
+
+  > span {
+    color: var(--ink-500);
+    font-size: 0.9rem;
+  }
+}
+
+.qty {
+  display: inline-flex;
+  align-items: center;
+  border: 1.6px solid var(--line);
+  border-radius: var(--r-pill);
+
+  button {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    color: var(--ink-700);
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    &:hover {
+      color: var(--blue-700);
+    }
+  }
+
+  span {
+    min-width: 30px;
+    text-align: center;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.9rem;
   }
 }
 

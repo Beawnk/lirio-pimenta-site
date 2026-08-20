@@ -1,18 +1,29 @@
 <script setup>
 import { findCategory } from '~/data/categories'
+import { useCartStore } from '~/stores/cart'
 import { useCatalogStore } from '~/stores/catalog'
 import { useFavoritesStore } from '~/stores/favorites'
+import { useToastStore } from '~/stores/toast'
 import { useWhatsApp } from '~/composables/useWhatsApp'
 
 const props = defineProps({
   product: { type: Object, required: true },
 })
 
+const cart = useCartStore()
 const catalog = useCatalogStore()
 const favorites = useFavoritesStore()
+const toast = useToastStore()
 const { consultLink } = useWhatsApp()
 
 const emoji = findCategory(props.product.category)?.emoji || '📦'
+
+/* Produto sob consulta não entra no carrinho: não dá para prometer o que
+   pode não existir na prateleira. Esse vai direto para a conversa. */
+function addToCart() {
+  cart.add(props.product.id)
+  toast.show(`${props.product.name} adicionado ao carrinho`)
+}
 </script>
 
 <template>
@@ -46,7 +57,16 @@ const emoji = findCategory(props.product.category)?.emoji || '📦'
       <div class="card-foot">
         <!-- Preço nunca aparece: quem decide o valor é a conversa no WhatsApp -->
         <span class="price-consult">Consultar preço</span>
+        <button
+          v-if="product.available"
+          class="add-btn"
+          :aria-label="`Adicionar ${product.name} ao carrinho`"
+          @click.stop="addToCart()"
+        >
+          <IconPlus />
+        </button>
         <a
+          v-else
           :href="consultLink(product.name)"
           target="_blank"
           rel="noopener"

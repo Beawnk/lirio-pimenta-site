@@ -75,15 +75,19 @@ npx vitest run tests/cart.test.js -t "remove item"
 
 ## Estado atual do repositório
 
-A portagem da demo está em andamento, em etapas. **Pronto:** a casca (header, rodapé,
-menu mobile, bottom nav, FAB, layout), as seções da home e o catálogo — busca, filtros,
-favoritos, ordenação e modal de produto. **Falta só o carrinho → WhatsApp**: o
-`CartDrawer` existe apenas com o estado vazio, e não há store de carrinho.
+A Fase A está portada: casca, seções da home, catálogo (busca, filtros, favoritos,
+ordenação, modal) e carrinho → WhatsApp. Falta o carrossel de banners e a troca dos
+emojis por ícones SVG.
 
-Estado compartilhado em três stores Pinia: `ui` (qual painel está aberto + trava de
-scroll), `catalog` (filtros e produto selecionado) e `favorites` (`lp_favs`). A lógica
-de filtrar é uma função pura em `app/composables/useCatalog.js`, testada em
-`tests/catalog.test.js` sem montar componente.
+**O padrão do projeto:** regra de negócio vira função pura em `app/composables/`
+(`useCatalog.js`, `useCart.js`) — sem Vue dentro, testada direto em `tests/`. O store
+Pinia é casca fina: guarda o estado reativo, salva no `localStorage` e delega as regras.
+Quatro stores: `ui` (painel aberto + trava de scroll), `catalog`, `favorites`, `cart`.
+
+**Armadilha de SSR que já mordeu duas vezes:** o que vem do `localStorage` só pode
+entrar no store depois de `app:suspense:resolve` (veja `app/plugins/cart.client.js`).
+Antes disso a hidratação ainda não terminou, e o Vue não corrige diferença de `class`
+entre servidor e cliente — o elemento fica com a classe errada para sempre.
 
 ```
 app/

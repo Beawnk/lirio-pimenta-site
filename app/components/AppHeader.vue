@@ -1,9 +1,11 @@
 <script setup>
 import { onMounted, onUnmounted, ref } from 'vue'
+import { useCartStore } from '~/stores/cart'
 import { useUiStore } from '~/stores/ui'
 import { useWhatsApp } from '~/composables/useWhatsApp'
 
 const ui = useUiStore()
+const cart = useCartStore()
 const { waLink } = useWhatsApp()
 
 const scrolled = ref(false)
@@ -56,8 +58,7 @@ const NAV = [
         </a>
         <button class="icon-btn" aria-label="Abrir carrinho" @click="ui.open('cart')">
           <IconCart />
-          <!-- O contador liga no store do carrinho na etapa do carrinho -->
-          <span class="cart-count">0</span>
+          <span class="cart-count" :class="{ show: cart.count > 0 }">{{ cart.count }}</span>
         </button>
         <button class="icon-btn hamburger" aria-label="Abrir menu" @click="ui.open('menu')">
           <IconMenu />

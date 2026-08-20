@@ -1,10 +1,16 @@
 <script setup>
+import { useCartStore } from '~/stores/cart'
+import { useToastStore } from '~/stores/toast'
 import { useUiStore } from '~/stores/ui'
 
-/* Casca do carrinho: só o drawer e o estado vazio.
-   Itens, quantidade e o envio para o WhatsApp entram na etapa do carrinho,
-   junto com o store Pinia — aqui é apenas para o botão do header não ficar morto. */
+const cart = useCartStore()
 const ui = useUiStore()
+const toast = useToastStore()
+
+function clear() {
+  cart.clear()
+  toast.show('Carrinho esvaziado')
+}
 </script>
 
 <template>
@@ -13,13 +19,36 @@ const ui = useUiStore()
       <h3>Seu carrinho</h3>
       <button class="close-x" aria-label="Fechar" @click="ui.close()">✕</button>
     </div>
+
     <div class="drawer-body">
-      <div class="cart-empty">
+      <div v-if="cart.isEmpty" class="cart-empty">
         <div class="big">🛒</div>
         <h3>Seu carrinho está vazio</h3>
         <p>Explore o catálogo e adicione produtos.</p>
         <a href="#catalogo" class="btn btn-primary btn-sm" @click="ui.close()">Ver produtos</a>
       </div>
+
+      <CartItem v-for="line in cart.lines" v-else :key="line.id" :line="line" />
+    </div>
+
+    <div v-if="!cart.isEmpty" class="drawer-foot">
+      <!-- Sem subtotal e sem total: o site não mostra preço.
+           O que fecha o pedido é a conversa no WhatsApp. -->
+      <div class="summ-row">
+        <span>{{ cart.count }} {{ cart.count === 1 ? 'item' : 'itens' }}</span>
+        <b>Valor a combinar</b>
+      </div>
+
+      <button class="btn btn-primary btn-block enviar" @click="ui.open('checkout')">
+        Enviar pedido no WhatsApp
+      </button>
+      <button class="btn btn-ghost btn-block btn-sm limpar" @click="clear()">
+        Limpar carrinho
+      </button>
+
+      <p class="cart-note">
+        Combine a retirada na Lírio Pimenta ou a entrega pelo WhatsApp. Nada é cobrado pelo site.
+      </p>
     </div>
   </aside>
 </template>
@@ -63,6 +92,12 @@ const ui = useUiStore()
   padding: 16px 22px;
 }
 
+.drawer-foot {
+  border-top: 1px solid var(--line);
+  padding: 18px 22px;
+  background: var(--bg-soft);
+}
+
 .cart-empty {
   text-align: center;
   padding: 40px 20px;
@@ -79,5 +114,32 @@ const ui = useUiStore()
   .btn {
     margin-top: 16px;
   }
+}
+
+.summ-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.92rem;
+  padding: 5px 0;
+  color: var(--ink-700);
+
+  b {
+    font-family: var(--font-display);
+  }
+}
+
+.enviar {
+  margin-top: 14px;
+}
+
+.limpar {
+  margin-top: 8px;
+}
+
+.cart-note {
+  font-size: 0.76rem;
+  color: var(--ink-500);
+  text-align: center;
+  margin-top: 10px;
 }
 </style>
