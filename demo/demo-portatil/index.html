@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0f5c8c" />
+
+<title>Lírio Pimenta | Variedades, Presentes e Muito Mais em Viamão</title>
+<meta name="description" content="Lírio Pimenta, há mais de 40 anos em Viamão. Presentes, brinquedos, livraria, tabacaria, utilidades, semijoias e muito mais. Rua Ramiro Barcelos, 84 — Centro." />
+<meta name="author" content="Lírio Pimenta" />
+<meta name="keywords" content="Lírio Pimenta, Viamão, presentes, brinquedos, livraria, tabacaria, semijoias, utilidades, mochilas, loja de variedades" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="business.business" />
+<meta property="og:title" content="Lírio Pimenta | Tudo que você procura, em um só lugar" />
+<meta property="og:description" content="Há mais de 40 anos ao lado do povo de Viamão. Uma loja de variedades, presentes e descobertas." />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="Lírio Pimenta" />
+<meta property="business:contact_data:street_address" content="Rua Ramiro Barcelos, 84" />
+<meta property="business:contact_data:locality" content="Viamão" />
+<meta property="business:contact_data:region" content="RS" />
+<meta property="business:contact_data:country_name" content="Brasil" />
+<meta property="business:contact_data:phone_number" content="+555130463033" />
+
+<!-- PWA -->
+<link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%22L%C3%ADrio%20Pimenta%22%2C%22short_name%22%3A%22L%C3%ADrio%20Pimenta%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23ffffff%22%2C%22theme_color%22%3A%22%230f5c8c%22%7D" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f5c8c'/%3E%3Ctext x='50' y='58' font-size='46' font-family='Poppins,Arial' font-weight='800' fill='%23f5c542' text-anchor='middle'%3ELP%3C/text%3E%3Cpath d='M30 74 h40' stroke='%23e63946' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+/* ============================================================
+   LÍRIO PIMENTA — DESIGN SYSTEM
+   ============================================================ */
+:root{
+  /* --- Cores marca --- */
+  --blue-900:#0a3c5c;
+  --blue-700:#0f5c8c;   /* azul fachada */
+  --blue-500:#1f7ab0;
+  --blue-100:#e6f1f8;
+  --gold-600:#e0a92e;
+  --gold-500:#f5c542;   /* dourado / destaque */
+  --gold-100:#fdf3d4;
+  --red-500:#e63946;    /* pontos de atenção */
+  --ink-900:#141a1f;
+  --ink-700:#2a343c;
+  --ink-500:#566470;
+  --ink-300:#93a1ab;
+  --line:#e4e9ed;
+  --bg:#ffffff;
+  --bg-soft:#f6f8fa;
+  --bg-tint:#eef4f8;
+  --white:#ffffff;
+  --ok:#1a9e57;
+
+  /* --- Tipografia --- */
+  --font-display:'Poppins',system-ui,Arial,sans-serif;
+  --font-text:'Inter',system-ui,Arial,sans-serif;
+
+  /* --- Espaçamento --- */
+  --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-5:24px;
+  --sp-6:32px; --sp-7:48px; --sp-8:64px; --sp-9:88px;
+
+  /* --- Raios --- */
+  --r-sm:8px; --r-md:14px; --r-lg:20px; --r-xl:28px; --r-pill:999px;
+
+  /* --- Sombras --- */
+  --sh-1:0 1px 2px rgba(16,40,60,.06),0 1px 3px rgba(16,40,60,.08);
+  --sh-2:0 4px 14px rgba(16,40,60,.10);
+  --sh-3:0 12px 34px rgba(16,40,60,.16);
+  --sh-gold:0 8px 22px rgba(224,169,46,.34);
+
+  --container:1220px;
+  --header-h:74px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:var(--font-text);color:var(--ink-900);
+  background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:var(--font-display);line-height:1.12;margin:0;color:var(--ink-900);letter-spacing:-.01em}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+ul{margin:0;padding:0;list-style:none}
+
+.container{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:20px}
+.section{padding:var(--sp-9) 0}
+.eyebrow{font-family:var(--font-display);font-weight:700;font-size:.78rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--blue-700)}
+.sec-head{max-width:640px;margin-bottom:var(--sp-6)}
+.sec-head.center{margin-inline:auto;text-align:center}
+.sec-title{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:800;margin-top:var(--sp-2)}
+.sec-sub{color:var(--ink-500);font-size:1.02rem;margin-top:var(--sp-3)}
+
+/* --- Botões --- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-family:var(--font-display);font-weight:600;font-size:.95rem;
+  padding:13px 22px;border-radius:var(--r-pill);transition:.22s var(--ease);
+  border:2px solid transparent;white-space:nowrap;line-height:1}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--blue-700);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--blue-900);box-shadow:var(--sh-3);transform:translateY(-2px)}
+.btn-gold{background:var(--gold-500);color:var(--ink-900);box-shadow:var(--sh-gold)}
+.btn-gold:hover{background:var(--gold-600);transform:translateY(-2px)}
+.btn-wa{background:#25d366;color:#08361b}
+.btn-wa:hover{background:#1fbe5a;transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--ink-900);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--blue-700);color:var(--blue-700)}
+.btn-light{background:#fff;color:var(--ink-900);box-shadow:var(--sh-1)}
+.btn-light:hover{box-shadow:var(--sh-2);transform:translateY(-2px)}
+.btn-sm{padding:9px 15px;font-size:.85rem}
+.btn-block{width:100%}
+.btn[disabled]{opacity:.5;cursor:not-allowed;transform:none!important}
+
+/* --- Badges --- */
+.badge{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-display);
+  font-weight:600;font-size:.72rem;letter-spacing:.03em;padding:5px 11px;border-radius:var(--r-pill)}
+.badge-new{background:var(--gold-100);color:#8a6410}
+.badge-cat{background:var(--blue-100);color:var(--blue-700)}
+.badge-soft{background:var(--bg-soft);color:var(--ink-500)}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+
+/* ============================================================
+   PLACEHOLDER DE IMAGEM (trocar por foto real via IMAGES)
+   ============================================================ */
+.ph{position:relative;width:100%;height:100%;overflow:hidden;background:var(--bg-soft);
+  display:flex;align-items:center;justify-content:center}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.ph.svgph{background:
+  radial-gradient(120% 120% at 20% 10%, #2a86bd 0%, var(--blue-700) 42%, var(--blue-900) 100%)}
+.ph .ph-inner{position:relative;z-index:2;text-align:center;color:#eaf4fb;padding:18px}
+.ph .ph-glyph{font-size:2rem;opacity:.9;margin-bottom:6px}
+.ph .ph-label{font-family:var(--font-display);font-weight:700;font-size:.9rem;letter-spacing:.02em}
+.ph .ph-note{font-size:.7rem;opacity:.72;margin-top:4px;letter-spacing:.04em;text-transform:uppercase}
+.ph.svgph::after{content:"";position:absolute;inset:0;z-index:1;opacity:.14;
+  background-image:radial-gradient(#fff 1px,transparent 1.4px);background-size:16px 16px}
+.ph.tint{background:
+  radial-gradient(120% 120% at 80% 0%, #fbe08a 0%, var(--gold-500) 45%, var(--gold-600) 100%)}
+.ph.tint .ph-inner{color:#5c4207}
+/* Em contextos com overlay de texto próprio, o rótulo do placeholder vai discreto */
+.hero .ph.svgph .ph-inner{position:absolute;left:0;right:0;bottom:18px;opacity:.42}
+.hero .ph.svgph .ph-glyph{display:none}
+.cat-card .ph.svgph .ph-inner,.ig-cell .ph.svgph .ph-inner{opacity:.5}
+.cat-card .ph.svgph .ph-note,.ig-cell .ph.svgph .ph-note,.ig-cell .ph.svgph .ph-label{display:none}
+.store-media .ph.svgph .ph-inner{opacity:.6}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.86);
+  backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:.3s var(--ease)}
+.header.scrolled{box-shadow:var(--sh-2);border-bottom-color:var(--line);background:rgba(255,255,255,.96)}
+.header-inner{display:flex;align-items:center;gap:var(--sp-5);height:var(--header-h)}
+.brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
+.brand-mark{width:44px;height:44px;border-radius:12px;background:var(--blue-700);
+  display:grid;place-items:center;font-family:var(--font-display);font-weight:800;color:var(--gold-500);
+  font-size:1.15rem;box-shadow:var(--sh-1);position:relative}
+.brand-mark::after{content:"";position:absolute;left:9px;right:9px;bottom:7px;height:3px;border-radius:3px;background:var(--red-500)}
+.brand-mark.has-logo{background:#fff!important;padding:0;overflow:hidden}
+.brand-mark.has-logo::after{display:none}
+.brand-mark.has-logo img{width:100%;height:100%;object-fit:contain}
+.brand-text{line-height:1}
+.brand-text b{font-family:var(--font-display);font-weight:800;font-size:1.12rem;color:var(--ink-900);display:block}
+.brand-text span{font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:var(--blue-700);font-weight:600}
+.nav{display:flex;align-items:center;gap:2px;margin-left:auto}
+.nav a{font-family:var(--font-display);font-weight:500;font-size:.92rem;color:var(--ink-700);
+  padding:9px 13px;border-radius:var(--r-sm);transition:.18s}
+.nav a:hover{background:var(--bg-soft);color:var(--blue-700)}
+.header-actions{display:flex;align-items:center;gap:8px}
+.icon-btn{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;
+  color:var(--ink-700);transition:.18s;position:relative;background:var(--bg-soft)}
+.icon-btn:hover{background:var(--blue-100);color:var(--blue-700)}
+.icon-btn svg{width:21px;height:21px}
+.cart-count{position:absolute;top:-4px;right:-4px;min-width:19px;height:19px;padding:0 5px;
+  background:var(--red-500);color:#fff;border-radius:var(--r-pill);font-size:.68rem;font-weight:700;
+  display:grid;place-items:center;font-family:var(--font-display);border:2px solid #fff;transform:scale(0);transition:.25s var(--ease)}
+.cart-count.show{transform:scale(1)}
+.hamburger{display:none}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{position:relative;min-height:min(88vh,720px);display:flex;align-items:flex-end;overflow:hidden}
+.hero .ph{position:absolute;inset:0;height:100%}
+.hero .ph img{object-position:center 34%}
+.hero-overlay{position:absolute;inset:0;z-index:2;
+  background:linear-gradient(180deg,rgba(10,60,92,.28) 0%,rgba(10,60,92,.12) 40%,rgba(8,30,46,.82) 100%)}
+.hero-inner{position:relative;z-index:3;width:100%;padding-bottom:var(--sp-9);color:#fff}
+.hero .tag40{display:inline-flex;align-items:center;gap:8px;background:rgba(245,197,66,.95);color:#4a3600;
+  font-family:var(--font-display);font-weight:700;font-size:.8rem;letter-spacing:.04em;
+  padding:8px 15px;border-radius:var(--r-pill);margin-bottom:var(--sp-4)}
+.hero h1{font-size:clamp(2.1rem,5.6vw,4rem);font-weight:800;color:#fff;max-width:15ch;text-shadow:0 2px 30px rgba(0,20,35,.4)}
+.hero-sub{font-size:clamp(1rem,2vw,1.25rem);max-width:46ch;margin-top:var(--sp-4);color:#e7f1f8;font-weight:400}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:var(--sp-6)}
+.hero-ig{display:inline-flex;align-items:center;gap:9px;margin-top:var(--sp-5);color:#eaf4fb;
+  font-size:.92rem;font-weight:500;opacity:.95}
+.hero-ig:hover{color:var(--gold-500)}
+
+/* --- Barra de categorias sticky --- */
+.catbar{background:var(--blue-900);position:sticky;top:var(--header-h);z-index:40}
+.catbar-scroll{display:flex;gap:6px;overflow-x:auto;padding:11px 0;scrollbar-width:none}
+.catbar-scroll::-webkit-scrollbar{display:none}
+.catbar a{flex-shrink:0;color:#cfe4f2;font-family:var(--font-display);font-weight:500;font-size:.86rem;
+  padding:7px 15px;border-radius:var(--r-pill);transition:.18s;white-space:nowrap}
+.catbar a:hover,.catbar a.active{background:rgba(255,255,255,.14);color:#fff}
+
+/* ============================================================
+   40 ANOS / FAIXA DE CONFIANÇA
+   ============================================================ */
+.trust{background:var(--bg-tint);border-block:1px solid var(--line)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-4);padding:var(--sp-6) 0}
+.trust-item{display:flex;gap:13px;align-items:flex-start}
+.trust-item .ic{width:42px;height:42px;flex-shrink:0;border-radius:12px;background:#fff;
+  display:grid;place-items:center;color:var(--blue-700);box-shadow:var(--sh-1)}
+.trust-item .ic svg{width:22px;height:22px}
+.trust-item b{font-family:var(--font-display);font-size:.98rem;display:block}
+.trust-item span{font-size:.85rem;color:var(--ink-500)}
+
+/* ============================================================
+   CATEGORIAS
+   ============================================================ */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.cat-card{position:relative;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:1/1.08;
+  box-shadow:var(--sh-1);transition:.3s var(--ease);cursor:pointer;display:block}
+.cat-card:hover{transform:translateY(-5px);box-shadow:var(--sh-3)}
+.cat-card .ph{position:absolute;inset:0}
+.cat-card:hover .ph img{transform:scale(1.07)}
+.cat-card .cat-body{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;
+  justify-content:flex-end;padding:18px;
+  background:linear-gradient(180deg,transparent 30%,rgba(8,30,46,.86) 100%);color:#fff}
+.cat-card .cat-emoji{position:absolute;top:14px;left:14px;font-size:1.5rem;z-index:3;
+  background:rgba(255,255,255,.92);width:44px;height:44px;border-radius:12px;display:grid;place-items:center;box-shadow:var(--sh-1)}
+.cat-card h3{color:#fff;font-size:1.15rem;font-weight:700}
+.cat-card p{font-size:.82rem;color:#dce7f0;margin-top:3px}
+.cat-card .cat-link{margin-top:10px;font-family:var(--font-display);font-weight:600;font-size:.82rem;
+  color:var(--gold-500);display:inline-flex;align-items:center;gap:5px}
+
+/* ============================================================
+   PRODUTOS / CATÁLOGO
+   ============================================================ */
+.toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:var(--sp-5)}
+.search{position:relative;flex:1;min-width:220px}
+.search svg{position:absolute;left:15px;top:50%;transform:translateY(-50%);width:19px;height:19px;color:var(--ink-300)}
+.search input{width:100%;padding:13px 16px 13px 44px;border:1.6px solid var(--line);border-radius:var(--r-pill);
+  font-size:.95rem;font-family:var(--font-text);transition:.18s;background:#fff}
+.search input:focus{outline:none;border-color:var(--blue-500);box-shadow:0 0 0 4px rgba(31,122,176,.12)}
+.select{padding:12px 16px;border:1.6px solid var(--line);border-radius:var(--r-pill);background:#fff;
+  font-family:var(--font-text);font-size:.9rem;color:var(--ink-700);cursor:pointer}
+.select:focus{outline:none;border-color:var(--blue-500)}
+.filter-toggle{display:none}
+
+.catalog-layout{display:grid;grid-template-columns:250px 1fr;gap:28px;align-items:start}
+.filters{position:sticky;top:calc(var(--header-h) + 56px);background:#fff;border:1px solid var(--line);
+  border-radius:var(--r-lg);padding:20px}
+.filters h4{font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-500);margin-bottom:12px}
+.filter-group{padding-bottom:18px;margin-bottom:18px;border-bottom:1px solid var(--line)}
+.filter-group:last-child{border:none;margin:0;padding:0}
+.chip-row{display:flex;flex-wrap:wrap;gap:7px}
+.fchip{font-family:var(--font-display);font-weight:500;font-size:.82rem;padding:7px 13px;border-radius:var(--r-pill);
+  background:var(--bg-soft);color:var(--ink-700);transition:.16s;border:1.6px solid transparent}
+.fchip:hover{background:var(--blue-100)}
+.fchip.active{background:var(--blue-700);color:#fff}
+.check{display:flex;align-items:center;gap:9px;font-size:.9rem;color:var(--ink-700);cursor:pointer;padding:6px 0}
+.check input{width:17px;height:17px;accent-color:var(--blue-700)}
+
+.results-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:10px}
+.results-meta .count{color:var(--ink-500);font-size:.9rem}
+
+.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;
+  display:flex;flex-direction:column;transition:.26s var(--ease);position:relative}
+.card:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:transparent}
+.card-media{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--bg-soft);cursor:pointer}
+.card:hover .card-media .ph img{transform:scale(1.06)}
+.card-badges{position:absolute;top:11px;left:11px;z-index:3;display:flex;gap:6px;flex-wrap:wrap}
+.fav{position:absolute;top:10px;right:10px;z-index:3;width:36px;height:36px;border-radius:50%;
+  background:rgba(255,255,255,.92);display:grid;place-items:center;color:var(--ink-500);box-shadow:var(--sh-1);transition:.18s}
+.fav:hover{color:var(--red-500);transform:scale(1.08)}
+.fav.active{color:var(--red-500)}
+.fav svg{width:18px;height:18px}
+.card-body{padding:15px 15px 17px;display:flex;flex-direction:column;flex:1}
+.card-cat{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--blue-700);font-weight:600;font-family:var(--font-display)}
+.card-name{font-family:var(--font-display);font-weight:600;font-size:1rem;margin-top:4px;line-height:1.3}
+.card-desc{font-size:.83rem;color:var(--ink-500);margin-top:6px;flex:1}
+.card-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px}
+.price{font-family:var(--font-display);font-weight:700;font-size:1.15rem;color:var(--ink-900)}
+.price small{font-weight:500;font-size:.75rem;color:var(--ink-500)}
+.price-consult{font-family:var(--font-display);font-weight:600;font-size:.82rem;color:var(--gold-600)}
+.add-btn{width:42px;height:42px;flex-shrink:0;border-radius:12px;background:var(--blue-700);color:#fff;
+  display:grid;place-items:center;transition:.2s;box-shadow:var(--sh-1)}
+.add-btn:hover{background:var(--blue-900);transform:translateY(-2px)}
+.add-btn svg{width:20px;height:20px}
+.add-btn.wa{background:#25d366;color:#08361b}
+.add-btn.wa:hover{background:#1fbe5a}
+
+.empty{grid-column:1/-1;text-align:center;padding:var(--sp-8) 20px;color:var(--ink-500)}
+.empty .big{font-size:2.4rem;margin-bottom:10px}
+
+/* skeleton */
+.skl{background:linear-gradient(100deg,#eef2f5 30%,#f7fafc 50%,#eef2f5 70%);
+  background-size:200% 100%;animation:shine 1.3s infinite}
+@keyframes shine{to{background-position:-200% 0}}
+
+/* ============================================================
+   "VOCÊ ENTRA PROCURANDO UMA COISA..."
+   ============================================================ */
+.discover{background:linear-gradient(135deg,var(--blue-900),var(--blue-700));color:#fff;overflow:hidden;position:relative}
+.discover::after{content:"";position:absolute;inset:0;opacity:.09;
+  background-image:radial-gradient(#fff 1px,transparent 1.4px);background-size:22px 22px}
+.discover .container{position:relative;z-index:2;text-align:center}
+.discover h2{color:#fff;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800}
+.rotator{height:1.4em;overflow:hidden;display:inline-block;vertical-align:bottom;position:relative;min-width:6ch}
+.rotator span{display:block;color:var(--gold-500);font-weight:800;animation:roll 9s infinite}
+@keyframes roll{
+  0%,14%{transform:translateY(0)} 16%,30%{transform:translateY(-100%)}
+  32%,46%{transform:translateY(-200%)} 48%,62%{transform:translateY(-300%)}
+  64%,78%{transform:translateY(-400%)} 80%,94%{transform:translateY(-500%)}
+  96%,100%{transform:translateY(-600%)}}
+.discover .end{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:#fff;margin-top:6px}
+.discover p{color:#cfe4f2;max-width:44ch;margin:18px auto 0}
+
+/* ============================================================
+   PRESENTES
+   ============================================================ */
+.gift-wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:center}
+.gift-media{border-radius:var(--r-xl);overflow:hidden;aspect-ratio:4/3;box-shadow:var(--sh-3)}
+.gift-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.gift-chip{display:inline-flex;align-items:center;gap:8px;padding:11px 17px;border-radius:var(--r-pill);
+  background:#fff;border:1.6px solid var(--line);font-family:var(--font-display);font-weight:500;
+  font-size:.9rem;transition:.2s;cursor:pointer}
+.gift-chip:hover{border-color:var(--gold-500);background:var(--gold-100);transform:translateY(-2px)}
+
+/* ============================================================
+   LOJA FÍSICA / LOCALIZAÇÃO
+   ============================================================ */
+.store{background:var(--bg-soft)}
+.store-wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:0;border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--sh-3);background:#fff}
+.store-media{position:relative;min-height:380px}
+.store-media .ph{position:absolute;inset:0}
+.store-info{padding:clamp(28px,4vw,48px);display:flex;flex-direction:column;justify-content:center}
+.store-info h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800}
+.info-row{display:flex;gap:13px;align-items:flex-start;padding:15px 0;border-bottom:1px solid var(--line)}
+.info-row:last-of-type{border:none}
+.info-row .ic{width:40px;height:40px;flex-shrink:0;border-radius:11px;background:var(--blue-100);
+  display:grid;place-items:center;color:var(--blue-700)}
+.info-row .ic svg{width:20px;height:20px}
+.info-row b{font-family:var(--font-display);font-size:.95rem;display:block}
+.info-row span{font-size:.88rem;color:var(--ink-500)}
+.info-row a{color:var(--blue-700);font-weight:500}
+
+/* --- Horário --- */
+.hours{margin-top:8px}
+.hours-status{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-display);font-weight:600;
+  font-size:.9rem;padding:8px 15px;border-radius:var(--r-pill);margin-bottom:14px}
+.hours-status.open{background:#e4f7ec;color:var(--ok)}
+.hours-status.closed{background:#fdeaec;color:var(--red-500)}
+.hours-status .dot{animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.hours-list li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px dashed var(--line);font-size:.9rem}
+.hours-list li:last-child{border:none}
+.hours-list li.today{font-weight:700;color:var(--blue-700)}
+.hours-list li span:first-child{color:var(--ink-700)}
+
+/* ============================================================
+   INSTAGRAM
+   ============================================================ */
+.ig-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:var(--sp-6)}
+.ig-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.ig-cell{position:relative;aspect-ratio:1;border-radius:var(--r-md);overflow:hidden;cursor:pointer;box-shadow:var(--sh-1)}
+.ig-cell .ph{position:absolute;inset:0}
+.ig-cell:hover .ph img{transform:scale(1.08)}
+.ig-cell .ig-ov{position:absolute;inset:0;z-index:3;background:rgba(15,92,140,.0);display:grid;place-items:center;
+  color:#fff;opacity:0;transition:.25s}
+.ig-cell:hover .ig-ov{background:rgba(10,60,92,.55);opacity:1}
+.ig-cell .ig-ov svg{width:30px;height:30px}
+
+/* ============================================================
+   WHATSAPP CTA
+   ============================================================ */
+.wa-band{background:linear-gradient(135deg,#0b8a3d,#25d366);color:#fff;border-radius:var(--r-xl);
+  padding:clamp(30px,5vw,54px);text-align:center;box-shadow:var(--sh-3);position:relative;overflow:hidden}
+.wa-band h2{color:#fff;font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:800}
+.wa-band p{color:#e6fff0;max-width:48ch;margin:14px auto 0}
+.wa-quick{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:26px}
+.wa-quick a{background:rgba(255,255,255,.16);color:#fff;border:1.6px solid rgba(255,255,255,.32);
+  padding:11px 18px;border-radius:var(--r-pill);font-family:var(--font-display);font-weight:500;font-size:.9rem;transition:.2s}
+.wa-quick a:hover{background:#fff;color:#0b8a3d}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer{background:var(--ink-900);color:#c3ced6;padding:var(--sp-9) 0 0}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;padding-bottom:var(--sp-7)}
+.footer h4{color:#fff;font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:16px}
+.footer a{color:#c3ced6;transition:.16s}
+.footer a:hover{color:var(--gold-500)}
+.footer-brand .brand-text b{color:#fff}
+.footer p{font-size:.9rem;line-height:1.7;margin-top:14px;max-width:34ch}
+.footer li{padding:5px 0;font-size:.9rem}
+.social{display:flex;gap:10px;margin-top:16px}
+.social a{width:42px;height:42px;border-radius:11px;background:rgba(255,255,255,.08);display:grid;place-items:center;color:#fff;transition:.2s}
+.social a:hover{background:var(--blue-700);transform:translateY(-2px)}
+.social svg{width:20px;height:20px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:22px 0;display:flex;justify-content:space-between;
+  flex-wrap:wrap;gap:10px;font-size:.82rem;color:var(--ink-300)}
+.footer-bottom a{color:var(--ink-300)}
+.demo-note{background:var(--gold-100);color:#7a5800;font-size:.8rem;padding:10px 16px;border-radius:var(--r-md);
+  text-align:center;margin-top:16px;font-weight:500}
+
+/* ============================================================
+   FLOATING WHATSAPP
+   ============================================================ */
+.fab-wa{position:fixed;right:20px;bottom:20px;z-index:70;display:flex;align-items:center;gap:0;
+  background:#25d366;color:#fff;border-radius:var(--r-pill);box-shadow:0 10px 30px rgba(11,138,61,.42);
+  padding:14px;transition:.28s var(--ease);overflow:hidden}
+.fab-wa svg{width:28px;height:28px;flex-shrink:0}
+.fab-wa .fab-text{max-width:0;opacity:0;white-space:nowrap;font-family:var(--font-display);font-weight:600;
+  font-size:.92rem;transition:.3s var(--ease)}
+.fab-wa:hover{padding-right:20px}
+.fab-wa:hover .fab-text{max-width:180px;opacity:1;margin-left:10px}
+.fab-wa.pulse::before{content:"";position:absolute;inset:0;border-radius:var(--r-pill);
+  border:2px solid #25d366;animation:fabpulse 2s infinite}
+@keyframes fabpulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.5);opacity:0}}
+
+/* ============================================================
+   DRAWER / MODAL / OVERLAY
+   ============================================================ */
+.overlay{position:fixed;inset:0;background:rgba(8,25,38,.55);backdrop-filter:blur(3px);z-index:80;
+  opacity:0;visibility:hidden;transition:.3s}
+.overlay.show{opacity:1;visibility:visible}
+
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(420px,92vw);background:#fff;z-index:90;
+  display:flex;flex-direction:column;transform:translateX(100%);transition:.36s var(--ease);box-shadow:var(--sh-3)}
+.drawer.show{transform:translateX(0)}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:20px 22px;border-bottom:1px solid var(--line)}
+.drawer-head h3{font-size:1.2rem;font-weight:700}
+.drawer-body{flex:1;overflow-y:auto;padding:16px 22px}
+.drawer-foot{border-top:1px solid var(--line);padding:18px 22px;background:var(--bg-soft)}
+.close-x{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;color:var(--ink-500);background:var(--bg-soft);transition:.16s}
+.close-x:hover{background:var(--red-500);color:#fff}
+
+.cart-item{display:flex;gap:13px;padding:14px 0;border-bottom:1px solid var(--line)}
+.cart-item .thumb{width:66px;height:66px;border-radius:12px;overflow:hidden;flex-shrink:0;background:var(--bg-soft)}
+.cart-item .ci-info{flex:1;min-width:0}
+.cart-item .ci-name{font-family:var(--font-display);font-weight:600;font-size:.92rem;line-height:1.25}
+.cart-item .ci-price{font-size:.84rem;color:var(--ink-500);margin-top:2px}
+.qty{display:inline-flex;align-items:center;gap:0;border:1.6px solid var(--line);border-radius:var(--r-pill);margin-top:8px}
+.qty button{width:30px;height:30px;display:grid;place-items:center;color:var(--ink-700);font-size:1.1rem;font-weight:600}
+.qty button:hover{color:var(--blue-700)}
+.qty span{min-width:30px;text-align:center;font-family:var(--font-display);font-weight:600;font-size:.9rem}
+.ci-remove{color:var(--ink-300);font-size:.78rem;margin-top:8px;display:inline-flex;align-items:center;gap:4px}
+.ci-remove:hover{color:var(--red-500)}
+.cart-empty{text-align:center;padding:40px 20px;color:var(--ink-500)}
+.cart-empty .big{font-size:2.6rem}
+.summ-row{display:flex;justify-content:space-between;font-size:.92rem;padding:5px 0;color:var(--ink-700)}
+.summ-row.total{font-family:var(--font-display);font-weight:700;font-size:1.25rem;color:var(--ink-900);
+  padding-top:12px;margin-top:6px;border-top:1px solid var(--line)}
+.cart-note{font-size:.76rem;color:var(--ink-500);text-align:center;margin-top:10px}
+
+/* Modal genérico centralizado */
+.modal{position:fixed;inset:0;z-index:90;display:grid;place-items:center;padding:20px;
+  opacity:0;visibility:hidden;transition:.3s}
+.modal.show{opacity:1;visibility:visible}
+.modal-card{background:#fff;border-radius:var(--r-xl);width:min(940px,100%);max-height:92vh;overflow:hidden;
+  display:flex;flex-direction:column;box-shadow:var(--sh-3);transform:translateY(16px) scale(.98);transition:.32s var(--ease)}
+.modal.show .modal-card{transform:none}
+.modal-scroll{overflow-y:auto}
+
+/* Modal produto */
+.pd-grid{display:grid;grid-template-columns:1fr 1fr}
+.pd-media{position:relative;min-height:420px;background:var(--bg-soft)}
+.pd-media .ph{position:absolute;inset:0}
+.pd-gallery{position:absolute;bottom:14px;left:14px;right:14px;z-index:3;display:flex;gap:8px}
+.pd-gallery .g{width:52px;height:52px;border-radius:10px;overflow:hidden;border:2px solid #fff;box-shadow:var(--sh-1);cursor:pointer;opacity:.75}
+.pd-gallery .g.active{opacity:1;border-color:var(--gold-500)}
+.pd-info{padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;position:relative}
+.pd-close{position:absolute;top:16px;right:16px}
+.pd-info h2{font-size:clamp(1.4rem,2.4vw,1.9rem);font-weight:800;margin-top:8px}
+.pd-info .pd-desc{color:var(--ink-500);margin-top:14px;font-size:.95rem;line-height:1.6}
+.pd-meta{display:flex;flex-direction:column;gap:9px;margin:20px 0;padding:16px 0;border-block:1px solid var(--line)}
+.pd-meta .m{display:flex;justify-content:space-between;font-size:.9rem}
+.pd-meta .m span:first-child{color:var(--ink-500)}
+.pd-meta .m b{font-family:var(--font-display)}
+.pd-price{font-family:var(--font-display);font-weight:800;font-size:2rem;margin:6px 0 4px}
+.pd-actions{margin-top:auto;display:flex;flex-direction:column;gap:10px;padding-top:16px}
+.pd-qtyrow{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+
+/* Stepper checkout */
+.steps{display:flex;align-items:center;gap:6px;padding:20px 24px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.step{display:flex;align-items:center;gap:8px;font-family:var(--font-display);font-size:.82rem;color:var(--ink-300)}
+.step .n{width:26px;height:26px;border-radius:50%;background:var(--bg-soft);display:grid;place-items:center;font-weight:700;font-size:.8rem;transition:.2s}
+.step.active{color:var(--blue-700)}
+.step.active .n{background:var(--blue-700);color:#fff}
+.step.done .n{background:var(--ok);color:#fff}
+.step-line{flex:1;height:2px;background:var(--line);min-width:12px}
+.co-body{padding:24px;overflow-y:auto}
+.field{margin-bottom:16px}
+.field label{display:block;font-family:var(--font-display);font-weight:500;font-size:.85rem;margin-bottom:6px}
+.field input,.field textarea{width:100%;padding:12px 14px;border:1.6px solid var(--line);border-radius:var(--r-md);
+  font-family:var(--font-text);font-size:.95rem;transition:.18s}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--blue-500);box-shadow:0 0 0 4px rgba(31,122,176,.1)}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.radio-card{display:flex;gap:12px;align-items:flex-start;padding:16px;border:1.8px solid var(--line);border-radius:var(--r-md);cursor:pointer;transition:.18s;margin-bottom:12px}
+.radio-card:hover{border-color:var(--blue-500)}
+.radio-card.sel{border-color:var(--blue-700);background:var(--blue-100)}
+.radio-card input{margin-top:3px;accent-color:var(--blue-700);width:18px;height:18px}
+.radio-card b{font-family:var(--font-display);font-size:.95rem}
+.radio-card p{font-size:.83rem;color:var(--ink-500);margin-top:3px}
+.co-foot{display:flex;justify-content:space-between;gap:12px;padding:18px 24px;border-top:1px solid var(--line);background:var(--bg-soft)}
+.review-box{background:var(--bg-soft);border-radius:var(--r-md);padding:18px}
+.review-box .rl{display:flex;justify-content:space-between;font-size:.9rem;padding:6px 0}
+.success-wrap{text-align:center;padding:30px 24px}
+.success-ic{width:76px;height:76px;border-radius:50%;background:#e4f7ec;color:var(--ok);display:grid;place-items:center;margin:0 auto 18px}
+.success-ic svg{width:40px;height:40px}
+
+/* Admin preview */
+.admin-badge{background:var(--gold-100);color:#7a5800;padding:8px 14px;border-radius:var(--r-pill);font-size:.78rem;font-weight:600;font-family:var(--font-display);display:inline-flex;gap:7px;align-items:center;margin-bottom:14px}
+.admin-grid{display:grid;grid-template-columns:180px 1fr;gap:0;min-height:480px}
+.admin-side{background:var(--ink-900);padding:20px 14px;color:#c3ced6}
+.admin-side .as-brand{color:#fff;font-family:var(--font-display);font-weight:700;margin-bottom:20px;font-size:.95rem;padding:0 8px}
+.admin-side a{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:9px;font-size:.86rem;color:#c3ced6;transition:.15s;cursor:pointer}
+.admin-side a:hover,.admin-side a.active{background:rgba(255,255,255,.09);color:#fff}
+.admin-main{padding:26px;background:var(--bg-soft);overflow-y:auto}
+.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}
+.kpi{background:#fff;border-radius:var(--r-md);padding:16px;border:1px solid var(--line)}
+.kpi .kv{font-family:var(--font-display);font-weight:800;font-size:1.5rem}
+.kpi .kl{font-size:.78rem;color:var(--ink-500);margin-top:2px}
+.kpi .kt{font-size:.74rem;color:var(--ok);margin-top:6px;font-weight:600}
+.admin-table{width:100%;background:#fff;border-radius:var(--r-md);border:1px solid var(--line);overflow:hidden;border-collapse:collapse}
+.admin-table th,.admin-table td{text-align:left;padding:12px 14px;font-size:.85rem;border-bottom:1px solid var(--line)}
+.admin-table th{background:var(--bg-soft);font-family:var(--font-display);font-weight:600;color:var(--ink-700);font-size:.78rem;text-transform:uppercase;letter-spacing:.04em}
+.admin-table tr:last-child td{border:none}
+.tag-st{padding:3px 9px;border-radius:var(--r-pill);font-size:.72rem;font-weight:600;font-family:var(--font-display)}
+.tag-st.ok{background:#e4f7ec;color:var(--ok)}
+.tag-st.low{background:#fdf3d4;color:#8a6410}
+.tag-st.out{background:#fdeaec;color:var(--red-500)}
+
+/* Toast */
+.toast-wrap{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:100;display:flex;flex-direction:column;gap:10px;align-items:center;pointer-events:none}
+.toast{background:var(--ink-900);color:#fff;padding:13px 20px;border-radius:var(--r-pill);font-size:.9rem;font-family:var(--font-display);font-weight:500;
+  box-shadow:var(--sh-3);display:flex;align-items:center;gap:10px;transform:translateY(20px);opacity:0;transition:.3s var(--ease)}
+.toast.show{transform:none;opacity:1}
+.toast .tic{width:22px;height:22px;border-radius:50%;background:var(--ok);display:grid;place-items:center;flex-shrink:0}
+.toast .tic svg{width:14px;height:14px;color:#fff}
+
+/* Mobile menu */
+.mmenu{position:fixed;top:0;left:0;height:100%;width:min(320px,86vw);background:#fff;z-index:90;
+  transform:translateX(-100%);transition:.34s var(--ease);box-shadow:var(--sh-3);display:flex;flex-direction:column}
+.mmenu.show{transform:translateX(0)}
+.mmenu-head{padding:20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.mmenu a{padding:15px 22px;border-bottom:1px solid var(--line);font-family:var(--font-display);font-weight:500;color:var(--ink-900);display:flex;align-items:center;gap:12px}
+.mmenu a:hover{background:var(--bg-soft);color:var(--blue-700)}
+
+/* Bottom nav mobile */
+.bottomnav{display:none}
+
+/* Reveal on scroll */
+.reveal{opacity:0;transform:translateY(24px);transition:.7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ============================================================
+   RESPONSIVO
+   ============================================================ */
+@media(max-width:1024px){
+  .cat-grid{grid-template-columns:repeat(3,1fr)}
+  .prod-grid{grid-template-columns:repeat(2,1fr)}
+  .ig-grid{grid-template-columns:repeat(4,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .trust-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:900px){
+  .nav{display:none}
+  .hamburger{display:grid}
+  .catalog-layout{grid-template-columns:1fr}
+  .filters{display:none}
+  .filter-toggle{display:inline-flex}
+  .gift-wrap{grid-template-columns:1fr}
+  .gift-media{order:-1}
+  .store-wrap{grid-template-columns:1fr}
+  .store-media{min-height:260px}
+  .pd-grid{grid-template-columns:1fr}
+  .pd-media{min-height:300px}
+  .admin-grid{grid-template-columns:1fr}
+  .admin-side{display:flex;gap:6px;overflow-x:auto;padding:12px}
+  .admin-side .as-brand{display:none}
+  .admin-side a{white-space:nowrap}
+  .kpi-row{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){
+  :root{--header-h:64px}
+  .section{padding:var(--sp-8) 0}
+  .container{padding-inline:16px}
+  .cat-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .prod-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .ig-grid{grid-template-columns:repeat(3,1fr)}
+  .footer-grid{grid-template-columns:1fr;gap:26px}
+  .trust-grid{grid-template-columns:1fr}
+  .field-row{grid-template-columns:1fr}
+  .hero{min-height:76vh}
+  .hero-cta{flex-direction:column;align-items:stretch}
+  .hero-cta .btn{width:100%}
+  .fab-wa{bottom:76px}
+  .fab-wa .fab-text{display:none}
+  .bottomnav{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;bottom:0;left:0;right:0;z-index:65;
+    background:#fff;border-top:1px solid var(--line);box-shadow:0 -2px 14px rgba(16,40,60,.08)}
+  .bottomnav a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 0;color:var(--ink-500);font-size:.66rem;font-family:var(--font-display);font-weight:500;position:relative}
+  .bottomnav a.active,.bottomnav a:active{color:var(--blue-700)}
+  .bottomnav svg{width:22px;height:22px}
+  .bottomnav .bn-count{position:absolute;top:4px;right:calc(50% - 20px);min-width:16px;height:16px;background:var(--red-500);color:#fff;border-radius:var(--r-pill);font-size:.62rem;display:grid;place-items:center;font-weight:700}
+  body{padding-bottom:58px}
+  .header-inner{gap:10px}
+  .header-actions{gap:6px}
+  .icon-btn{width:40px;height:40px}
+  #openSearch{display:none}
+  .brand-text span{display:none}
+  .cat-card .cat-emoji{width:38px;height:38px;font-size:1.2rem}
+  .card-name{font-size:.92rem}
+  .prod-grid .card-desc{display:none}
+}
+@media(max-width:400px){
+  .cat-grid{grid-template-columns:1fr 1fr;gap:10px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto}
+  .reveal{opacity:1;transform:none}
+}
+:focus-visible{outline:3px solid var(--gold-500);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;padding:10px 16px;border-radius:8px;z-index:200}
+.skip:focus{left:16px}
+</style>
+</head>
+<body>
+<a href="#catalogo" class="skip">Pular para o catálogo</a>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#top" class="brand" aria-label="Lírio Pimenta — início">
+      <span class="brand-mark">LP</span>
+      <span class="brand-text"><b>Lírio Pimenta</b><span>Vem ver &middot; Viamão/RS</span></span>
+    </a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#categorias">Categorias</a>
+      <a href="#novidades">Novidades</a>
+      <a href="#catalogo">Ofertas</a>
+      <a href="#presentes">Presentes</a>
+      <a href="#historia">Sobre</a>
+      <a href="#instagram">Instagram</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="openSearch" aria-label="Buscar produtos">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
+      <a href="https://wa.me/5551998073190" target="_blank" rel="noopener" class="icon-btn" aria-label="WhatsApp" style="color:#25d366">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.7-.84-2-.93-.26-.1-.45-.15-.64.15-.19.28-.73.92-.9 1.11-.16.19-.33.21-.62.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.08-.15-.64-1.55-.88-2.12-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-1 .98-1 2.38s1.02 2.76 1.17 2.95c.15.19 2.02 3.08 4.9 4.32.68.29 1.22.47 1.63.6.69.22 1.31.19 1.8.11.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.77.46 3.43 1.27 4.88L2 22l5.25-1.38A9.9 9.9 0 0 0 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.17c-1.5 0-2.98-.4-4.27-1.17l-.3-.18-3.12.82.83-3.04-.2-.31A8.1 8.1 0 0 1 3.83 12 8.17 8.17 0 1 1 12 20.17z"/></svg>
+      </a>
+      <button class="icon-btn" id="openCart" aria-label="Abrir carrinho">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1.4"/><circle cx="18" cy="21" r="1.4"/><path d="M2.5 3h2l2.3 12.3a2 2 0 0 0 2 1.7h8.4a2 2 0 0 0 2-1.6L22 7H6"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="icon-btn hamburger" id="openMenu" aria-label="Abrir menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<span id="top"></span>
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Boas-vindas">
+  <div class="ph" data-img="fachada" data-label="Fachada da loja" data-glyph="🏪"></div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-inner">
+    <span class="tag40">✦ Mais de 40 anos ao lado de Viamão</span>
+    <h1>Há mais de 40 anos ao lado de Viamão.</h1>
+    <p class="hero-sub">Uma loja de variedades, presentes e descobertas para todos os momentos. Tudo que você procura, em um só lugar.</p>
+    <div class="hero-cta">
+      <a href="#catalogo" class="btn btn-gold">Explorar produtos
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="https://wa.me/5551998073190?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20L%C3%ADrio%20Pimenta." target="_blank" rel="noopener" class="btn btn-wa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.77.46 3.43 1.27 4.88L2 22l5.25-1.38A9.9 9.9 0 0 0 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+        Falar pelo WhatsApp</a>
+    </div>
+    <a href="https://www.instagram.com/lojaliriopimenta/" target="_blank" rel="noopener" class="hero-ig">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      Ver novidades no Instagram &rarr;
+    </a>
+  </div>
+</section>
+
+<!-- ============ BARRA DE CATEGORIAS ============ -->
+<nav class="catbar" aria-label="Atalhos de categorias">
+  <div class="container">
+    <div class="catbar-scroll" id="catbarScroll"></div>
+  </div>
+</nav>
+
+<!-- ============ FAIXA DE CONFIANÇA ============ -->
+<section class="trust">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3z"/></svg></span>
+        <div><b>Tradição de 40 anos</b><span>Parte da história de Viamão.</span></div>
+      </div>
+      <div class="trust-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v16"/></svg></span>
+        <div><b>Variedade de verdade</b><span>Presentes, brinquedos e muito mais.</span></div>
+      </div>
+      <div class="trust-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.77.46 3.43 1.27 4.88L2 22l5.25-1.38A9.9 9.9 0 0 0 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg></span>
+        <div><b>Atendimento humano</b><span>Fale direto pelo WhatsApp.</span></div>
+      </div>
+      <div class="trust-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <div><b>No Centro de Viamão</b><span>Rua Ramiro Barcelos, 84.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATEGORIAS ============ -->
+<section class="section" id="categorias">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">O que você encontra aqui</span>
+      <h2 class="sec-title">Variedade para comprar. Presentes para surpreender.</h2>
+      <p class="sec-sub">Você entra procurando uma coisa e pode sair encontrando várias. Explore as categorias da loja.</p>
+    </div>
+    <div class="cat-grid" id="catGrid"></div>
+  </div>
+</section>
+
+<!-- ============ NOVIDADES ============ -->
+<section class="section" id="novidades" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="ig-head reveal">
+      <div class="sec-head" style="margin-bottom:0">
+        <span class="eyebrow">Chegou novidade</span>
+        <h2 class="sec-title">Chegou novidade na Lírio Pimenta</h2>
+        <p class="sec-sub">A loja está sempre recebendo produtos novos. Veja algumas das novidades e acompanhe as reposições pelas nossas redes.</p>
+      </div>
+      <a href="#catalogo" class="btn btn-ghost">Ver catálogo completo</a>
+    </div>
+    <div class="prod-grid" id="newGrid"></div>
+  </div>
+</section>
+
+<!-- ============ VOCÊ ENTRA PROCURANDO ============ -->
+<section class="section discover">
+  <div class="container reveal">
+    <span class="eyebrow" style="color:var(--gold-500)">A cara da Lírio Pimenta</span>
+    <h2 style="margin-top:12px">Você entra procurando<br>
+      <span class="rotator"><span>uma pilha…</span><span>um brinquedo…</span><span>um presente…</span><span>uma mochila…</span><span>uma semijoia…</span><span>um acessório…</span><span>uma pilha…</span></span>
+    </h2>
+    <div class="end">…e encontra muito mais.</div>
+    <p>Do presente ao dia a dia: tem Lírio Pimenta. É esse tipo de descoberta que só uma loja de verdade proporciona.</p>
+  </div>
+</section>
+
+<!-- ============ CATÁLOGO / E-COMMERCE ============ -->
+<section class="section" id="catalogo">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Catálogo digital</span>
+      <h2 class="sec-title">Explore o catálogo</h2>
+      <p class="sec-sub">Busque, filtre e monte seu carrinho. Finalize a compra pelo WhatsApp e retire na loja.</p>
+    </div>
+
+    <div class="toolbar">
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="search" id="searchInput" placeholder="Buscar: pilha, brinquedo, presente, mochila…" aria-label="Buscar produtos" />
+      </div>
+      <button class="btn btn-ghost btn-sm filter-toggle" id="openFilters">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M7 12h10M10 18h4"/></svg> Filtros</button>
+      <select class="select" id="sortSelect" aria-label="Ordenar">
+        <option value="relevance">Ordenar: Relevância</option>
+        <option value="new">Novidades primeiro</option>
+        <option value="price-asc">Menor preço</option>
+        <option value="price-desc">Maior preço</option>
+        <option value="name">Nome (A-Z)</option>
+      </select>
+    </div>
+
+    <div class="catalog-layout">
+      <aside class="filters" id="filtersPanel" aria-label="Filtros">
+        <div class="filter-group">
+          <h4>Categoria</h4>
+          <div class="chip-row" id="catFilters"></div>
+        </div>
+        <div class="filter-group">
+          <h4>Faixa de preço</h4>
+          <div class="chip-row" id="priceFilters">
+            <button class="fchip active" data-price="all">Todos</button>
+            <button class="fchip" data-price="0-25">Até R$ 25</button>
+            <button class="fchip" data-price="25-60">R$ 25–60</button>
+            <button class="fchip" data-price="60-999">R$ 60+</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <h4>Disponibilidade</h4>
+          <label class="check"><input type="checkbox" id="fltAvailable"> Disponível na loja</label>
+          <label class="check"><input type="checkbox" id="fltNew"> Somente novidades</label>
+          <label class="check"><input type="checkbox" id="fltPrice"> Com preço definido</label>
+        </div>
+        <button class="btn btn-ghost btn-sm btn-block" id="clearFilters" style="margin-top:4px">Limpar filtros</button>
+      </aside>
+
+      <div>
+        <div class="results-meta">
+          <span class="count" id="resultCount"></span>
+          <button class="btn btn-ghost btn-sm" id="favToggle">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-8.5C.5 9 2 5 5.5 5c2 0 3.5 1.5 4.5 3 1-1.5 2.5-3 4.5-3C18 5 19.5 9 17.5 12.5 15 16.5 12 21 12 21z"/></svg>
+            Favoritos</button>
+        </div>
+        <div class="prod-grid" id="prodGrid"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRESENTES ============ -->
+<section class="section" id="presentes" style="background:var(--bg-tint)">
+  <div class="container">
+    <div class="gift-wrap">
+      <div>
+        <span class="eyebrow">Encontrou o presente?</span>
+        <h2 class="sec-title" style="margin-top:10px">Aquele presente que combina com cada pessoa.</h2>
+        <p class="sec-sub">Tem aniversário, lembrança, amigo secreto ou simplesmente vontade de presentear? Explore nossas opções e encontre o presente certo.</p>
+        <div class="gift-chips" id="giftChips"></div>
+        <a href="#catalogo" class="btn btn-primary" style="margin-top:24px" onclick="filterByCategory('Presentes')">Ver presentes
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="gift-media">
+        <div class="ph" data-img="presente" data-label="Presentes" data-glyph="🎁" data-tint="1"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HISTÓRIA ============ -->
+<section class="section" id="historia">
+  <div class="container">
+    <div class="gift-wrap">
+      <div class="gift-media">
+        <div class="ph" data-img="interior" data-label="Interior da loja" data-glyph="🛍️"></div>
+      </div>
+      <div>
+        <span class="eyebrow">Nossa história</span>
+        <h2 class="sec-title" style="margin-top:10px">Mais de 40 anos fazendo parte da história de Viamão.</h2>
+        <p class="sec-sub">A Lírio Pimenta construiu sua história lado a lado com a comunidade de Viamão. Uma loja tradicional, conhecida pela variedade, pelo atendimento e por aquele tipo de descoberta que só uma loja de verdade proporciona.</p>
+        <div class="gift-chips" style="margin-top:22px">
+          <span class="gift-chip">🏪 Loja física no Centro</span>
+          <span class="gift-chip">💬 Atendimento próximo</span>
+          <span class="gift-chip">🧭 Referência local</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOJA / LOCALIZAÇÃO ============ -->
+<section class="section store" id="loja">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Venha conhecer a loja</span>
+      <h2 class="sec-title">Passe na loja. Descubra o que chegou.</h2>
+    </div>
+    <div class="store-wrap">
+      <div class="store-media">
+        <div class="ph" data-img="fachada2" data-label="Fachada — Lírio Pimenta" data-glyph="🏪"></div>
+      </div>
+      <div class="store-info">
+        <h2>Lírio Pimenta</h2>
+        <div class="info-row">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><b>Endereço</b><span>Rua Ramiro Barcelos, 84 — Centro, Viamão/RS</span></div>
+        </div>
+        <div class="info-row">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.1a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg></span>
+          <div><b>Telefones</b><span><a href="tel:+555130463033">(51) 3046-3033</a> &middot; <a href="https://wa.me/5551998073190" target="_blank" rel="noopener">(51) 99807-3190</a></span></div>
+        </div>
+        <div class="hours info-row" style="display:block;border:none;padding-top:18px">
+          <div id="hoursStatus" class="hours-status"><span class="dot"></span><span>Verificando…</span></div>
+          <ul class="hours-list" id="hoursList"></ul>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px">
+          <a href="https://www.google.com/maps/search/?api=1&query=Rua+Ramiro+Barcelos%2C+84%2C+Centro%2C+Viam%C3%A3o%2C+RS" target="_blank" rel="noopener" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Como chegar</a>
+          <a href="https://wa.me/5551998073190" target="_blank" rel="noopener" class="btn btn-ghost">Chamar no WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTAGRAM ============ -->
+<section class="section" id="instagram" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="ig-head reveal">
+      <div class="sec-head" style="margin-bottom:0">
+        <span class="eyebrow">Destaques da loja</span>
+        <h2 class="sec-title">O que está chegando na Lírio Pimenta?</h2>
+        <p class="sec-sub">Novidades, reposições, produtos e oportunidades aparecem primeiro nas nossas redes.</p>
+      </div>
+      <a href="https://www.instagram.com/lojaliriopimenta/" target="_blank" rel="noopener" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Seguir no Instagram</a>
+    </div>
+    <div class="ig-grid" id="igGrid"></div>
+  </div>
+</section>
+
+<!-- ============ WHATSAPP ============ -->
+<section class="section">
+  <div class="container">
+    <div class="wa-band reveal">
+      <h2>Quer saber se chegou? Pergunte pra gente.</h2>
+      <p>Fale com a Lírio Pimenta pelo WhatsApp: consulte um produto, reserve, pergunte o preço ou tire dúvidas. Atendimento humano e rápido.</p>
+      <div class="wa-quick">
+        <a href="https://wa.me/5551998073190?text=Ol%C3%A1!%20Quero%20consultar%20um%20produto." target="_blank" rel="noopener">Consultar produto</a>
+        <a href="https://wa.me/5551998073190?text=Ol%C3%A1!%20Quero%20reservar%20um%20produto." target="_blank" rel="noopener">Reservar produto</a>
+        <a href="https://wa.me/5551998073190?text=Ol%C3%A1!%20Gostaria%20de%20saber%20o%20pre%C3%A7o%20de%20um%20produto." target="_blank" rel="noopener">Saber preço</a>
+        <a href="https://wa.me/5551998073190?text=Ol%C3%A1!%20Esse%20produto%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Perguntar disponibilidade</a>
+        <a href="https://wa.me/5551998073190?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida." target="_blank" rel="noopener">Tirar dúvidas</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <span class="brand-mark">LP</span>
+          <span class="brand-text"><b>Lírio Pimenta</b><span style="color:var(--gold-500)">Vem ver</span></span>
+        </a>
+        <p>Mais de 40 anos ao lado do povo de Viamão. Presentes, brinquedos, livraria, tabacaria, utilidades, semijoias e muito mais.</p>
+        <div class="social">
+          <a href="https://www.instagram.com/lojaliriopimenta/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" id="fbLink" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2 0-3.5 1.5-3.5 3.5V11H8v3h2.5v7h3v-7H16l.5-3H13.5V9.5c0-.3.2-.5.5-.5z"/></svg></a>
+          <a href="https://wa.me/5551998073190" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.77.46 3.43 1.27 4.88L2 22l5.25-1.38A9.9 9.9 0 0 0 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Loja</h4>
+        <ul>
+          <li>Rua Ramiro Barcelos, 84</li>
+          <li>Centro — Viamão/RS</li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Rua+Ramiro+Barcelos%2C+84%2C+Centro%2C+Viam%C3%A3o%2C+RS" target="_blank" rel="noopener">Ver no mapa &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Atendimento</h4>
+        <ul>
+          <li><a href="tel:+555130463033">(51) 3046-3033</a></li>
+          <li>WhatsApp:</li>
+          <li><a href="https://wa.me/5551998073190" target="_blank" rel="noopener">(51) 99807-3190</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horário</h4>
+        <ul>
+          <li>Seg a qua: 09:00–18:30</li>
+          <li>Qui a sáb: 08:30–18:30</li>
+          <li>Domingo: fechado</li>
+        </ul>
+        <button class="btn btn-ghost btn-sm" id="openAdmin" style="margin-top:14px;color:#c3ced6;border-color:rgba(255,255,255,.2)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+          Área administrativa</button>
+      </div>
+    </div>
+    <p class="demo-note">⚠️ Demonstração — Este é um protótipo de apresentação. Preços e disponibilidade devem ser confirmados na loja ou pelo WhatsApp. Nenhum pedido é processado de verdade.</p>
+    <div class="footer-bottom">
+      <span>© <span id="yr"></span> Lírio Pimenta — Viamão/RS. Todos os direitos reservados.</span>
+      <span>Demo de transformação digital &middot; Fase 1 de 7</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a href="https://wa.me/5551998073190?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20L%C3%ADrio%20Pimenta." target="_blank" rel="noopener" class="fab-wa pulse" aria-label="Fale conosco no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.7-.84-2-.93-.26-.1-.45-.15-.64.15-.19.28-.73.92-.9 1.11-.16.19-.33.21-.62.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.08-.15-.64-1.55-.88-2.12-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-1 .98-1 2.38s1.02 2.76 1.17 2.95c.15.19 2.02 3.08 4.9 4.32.68.29 1.22.47 1.63.6.69.22 1.31.19 1.8.11.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.77.46 3.43 1.27 4.88L2 22l5.25-1.38A9.9 9.9 0 0 0 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.17c-1.5 0-2.98-.4-4.27-1.17l-.3-.18-3.12.82.83-3.04-.2-.31A8.1 8.1 0 0 1 3.83 12 8.17 8.17 0 1 1 12 20.17z"/></svg>
+  <span class="fab-text">Fale conosco</span>
+</a>
+
+<!-- ============ BOTTOM NAV MOBILE ============ -->
+<nav class="bottomnav" aria-label="Navegação rápida">
+  <a href="#top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg>Início</a>
+  <a href="#catalogo" id="bnSearch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>Buscar</a>
+  <a href="#" id="bnCart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1.4"/><circle cx="18" cy="21" r="1.4"/><path d="M2.5 3h2l2.3 12.3a2 2 0 0 0 2 1.7h8.4a2 2 0 0 0 2-1.6L22 7H6"/></svg>Carrinho<span class="bn-count" id="bnCount" style="display:none">0</span></a>
+  <a href="https://wa.me/5551998073190" target="_blank" rel="noopener" style="color:#25d366"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.77.46 3.43 1.27 4.88L2 22l5.25-1.38A9.9 9.9 0 0 0 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>WhatsApp</a>
+</nav>
+
+<!-- ============ OVERLAY + DRAWERS + MODALS ============ -->
+<div class="overlay" id="overlay"></div>
+
+<!-- Mobile menu -->
+<aside class="mmenu" id="mmenu" aria-label="Menu">
+  <div class="mmenu-head">
+    <a href="#top" class="brand"><span class="brand-mark">LP</span><span class="brand-text"><b>Lírio Pimenta</b></span></a>
+    <button class="close-x" id="closeMenu" aria-label="Fechar">✕</button>
+  </div>
+  <a href="#categorias">Categorias</a>
+  <a href="#novidades">Novidades</a>
+  <a href="#catalogo">Catálogo &amp; Ofertas</a>
+  <a href="#presentes">Presentes</a>
+  <a href="#historia">Sobre a loja</a>
+  <a href="#loja">Onde estamos</a>
+  <a href="https://www.instagram.com/lojaliriopimenta/" target="_blank" rel="noopener">Instagram</a>
+  <a href="https://wa.me/5551998073190" target="_blank" rel="noopener" style="color:#25d366">WhatsApp</a>
+</aside>
+
+<!-- Cart drawer -->
+<aside class="drawer" id="cartDrawer" aria-label="Carrinho">
+  <div class="drawer-head">
+    <h3>Seu carrinho</h3>
+    <button class="close-x" id="closeCart" aria-label="Fechar">✕</button>
+  </div>
+  <div class="drawer-body" id="cartBody"></div>
+  <div class="drawer-foot" id="cartFoot"></div>
+</aside>
+
+<!-- Filters drawer (mobile) -->
+<aside class="drawer" id="filtersDrawer" aria-label="Filtros" style="width:min(360px,92vw)">
+  <div class="drawer-head"><h3>Filtros</h3><button class="close-x" id="closeFilters" aria-label="Fechar">✕</button></div>
+  <div class="drawer-body" id="filtersDrawerBody"></div>
+</aside>
+
+<!-- Product modal -->
+<div class="modal" id="prodModal" role="dialog" aria-modal="true" aria-label="Detalhes do produto">
+  <div class="modal-card"><div class="modal-scroll"><div class="pd-grid" id="prodModalBody"></div></div></div>
+</div>
+
+<!-- Checkout modal -->
+<div class="modal" id="coModal" role="dialog" aria-modal="true" aria-label="Finalizar compra">
+  <div class="modal-card">
+    <div class="steps" id="coSteps"></div>
+    <div class="co-body" id="coBody"></div>
+    <div class="co-foot" id="coFoot"></div>
+  </div>
+</div>
+
+<!-- Admin modal -->
+<div class="modal" id="adminModal" role="dialog" aria-modal="true" aria-label="Painel administrativo (prévia)">
+  <div class="modal-card" style="width:min(1040px,100%)">
+    <div class="drawer-head"><div><span class="admin-badge">👁️ Prévia do futuro painel administrativo</span><h3 style="margin-top:2px">Painel Lírio Pimenta</h3></div><button class="close-x" id="closeAdmin" aria-label="Fechar">✕</button></div>
+    <div class="modal-scroll"><div class="admin-grid" id="adminBody"></div></div>
+  </div>
+</div>
+
+<div class="toast-wrap" id="toastWrap"></div>
+
+<script>
+/* ============================================================
+   LÍRIO PIMENTA — APP (demo)
+   ============================================================ */
+
+/* ---- CONFIG DE LINKS OFICIAIS ---- */
+const WHATSAPP    = "5551998073190";
+const PHONE       = "+555130463033";
+const INSTAGRAM   = "https://www.instagram.com/lojaliriopimenta/";
+const MAPS_QUERY  = "https://www.google.com/maps/search/?api=1&query=Rua+Ramiro+Barcelos%2C+84%2C+Centro%2C+Viam%C3%A3o%2C+RS";
+/* Facebook: URL oficial não confirmada — inserir quando disponível */
+const FACEBOOK_URL = "INSERIR_URL_OFICIAL_DO_FACEBOOK";
+
+/* ============================================================
+   IMAGENS — troque cada valor pela foto REAL correspondente.
+   Aceita caminho ("assets/images/fachada.jpg") ou data-URL base64.
+   Enquanto vazio (""), exibe um placeholder elegante da marca.
+   ============================================================ */
+const IMAGES = {
+  fachada: "img/fachada.webp", // fachada da loja (hero + localização)
+  fachada2: "img/fachada2.webp", // fachada — versão ampla
+  interior: "img/interior.webp", // interior da loja
+  pilhas: "img/pilhas.webp", // pilhas e carregadores
+  tabacaria: "img/tabacaria.webp", // palhas e fumo
+  presente: "img/presente.webp", // kit presente
+  pessoas: "img/pessoas.webp", // atendente apresentando
+  logo: "img/logo.webp", // logotipo
+};
+
+/* ---- helper de imagem/placeholder ---- */
+function phInner(key,label,glyph,tint){
+  const src = IMAGES[key];
+  if(src){
+    return `<img src="${src}" alt="${label} — Lírio Pimenta" loading="lazy">`;
+  }
+  return `<div class="ph-inner"><div class="ph-glyph">${glyph||"📷"}</div>
+    <div class="ph-label">${label}</div><div class="ph-note">Foto real da loja</div></div>`;
+}
+function phClass(key,tint){
+  return IMAGES[key] ? "ph" : ("ph "+(tint?"svgph tint":"svgph"));
+}
+/* hidrata os .ph estáticos do HTML */
+function hydratePlaceholders(){
+  document.querySelectorAll('.ph[data-img]').forEach(el=>{
+    const k=el.dataset.img,l=el.dataset.label||"Lírio Pimenta",g=el.dataset.glyph,t=el.dataset.tint;
+    el.className=phClass(k,t);
+    el.innerHTML=phInner(k,l,g,t);
+  });
+}
+
+/* ============================================================
+   CATEGORIAS
+   ============================================================ */
+const CATEGORIES = [
+  {name:"Presentes",         emoji:"🎁", img:"presente",  desc:"Para surpreender alguém especial."},
+  {name:"Brinquedos",        emoji:"🧸", img:"interior",  desc:"Diversão para diferentes idades."},
+  {name:"Livraria",          emoji:"📚", img:"interior",  desc:"Leitura, estudo e papelaria."},
+  {name:"Tabacaria",         emoji:"🚬", img:"tabacaria", desc:"Produtos e acessórios de tabacaria."},
+  {name:"Semijoias",         emoji:"💎", img:"presente",  desc:"Detalhes para presentear ou usar."},
+  {name:"Utilidades",        emoji:"🏠", img:"pilhas",    desc:"Coisas úteis para o dia a dia."},
+  {name:"Bolsas e Mochilas", emoji:"🎒", img:"fachada2",  desc:"Escola, trabalho e passeio."},
+  {name:"Esportes",          emoji:"⚽", img:"fachada",   desc:"Bolas e artigos esportivos."}
+];
+
+/* ============================================================
+   PRODUTOS (baseados nas fotos reais da loja).
+   price:null => "Consulte disponibilidade".
+   Preços marcados vieram de etiquetas visíveis nas fotos —
+   confirmar sempre na loja.
+   ============================================================ */
+const PRODUCTS = [
+  {id:1,  name:"Pilhas Recarregáveis AA 2700mAh", cat:"Utilidades",        img:"pilhas",    price:null,  avail:true,  isNew:true,  desc:"Pilhas recarregáveis FlexGold AA, alta capacidade para controles, brinquedos e mais."},
+  {id:2,  name:"Pilhas Recarregáveis AAA 1100mAh",cat:"Utilidades",        img:"pilhas",    price:null,  avail:true,  isNew:true,  desc:"Pilhas recarregáveis FlexGold AAA, práticas e econômicas para o dia a dia."},
+  {id:3,  name:"Carregador de Pilhas AA/AAA",     cat:"Utilidades",        img:"pilhas",    price:null,  avail:true,  isNew:true,  desc:"Carregador FlexGold para pilhas recarregáveis AA e AAA. Consulte na loja."},
+  {id:4,  name:"Carregador Normal de Pilhas",     cat:"Utilidades",        img:"pilhas",    price:null,  avail:true,  isNew:false, desc:"Carregador de pilhas para uso doméstico. Confira a disponibilidade."},
+  {id:5,  name:"Palha de Milho Azul Premium",     cat:"Tabacaria",         img:"tabacaria", price:null,  avail:true,  isNew:true,  desc:"Palha natural JMR Especial Seda Premium — chegou reposição."},
+  {id:6,  name:"Fumo em Ramo Sobradinho",         cat:"Tabacaria",         img:"tabacaria", price:null,  avail:true,  isNew:true,  desc:"Fumo em ramo tradicional Sobradinho. Produto de tabacaria."},
+  {id:7,  name:"Kit Presente Masculino",          cat:"Presentes",         img:"presente",  price:null,  avail:true,  isNew:false, desc:"Kit presente com perfumaria e cuidados. Opção certeira para presentear."},
+  {id:8,  name:"Bola de Futebol",                 cat:"Esportes",          img:"fachada",   price:null,  avail:true,  isNew:false, desc:"Bola de futebol para treino e lazer. Modelos variados na loja."},
+  {id:9,  name:"Bola de Vôlei",                   cat:"Esportes",          img:"fachada",   price:null,  avail:true,  isNew:false, desc:"Bola de vôlei colorida. Confira as opções disponíveis."},
+  {id:10, name:"Mochila Escolar Infantil",        cat:"Bolsas e Mochilas", img:"fachada",   price:null,  avail:true,  isNew:true,  desc:"Mochilas escolares com estampas de personagens. Ótimas para a volta às aulas."},
+  {id:11, name:"Mochila para Notebook",           cat:"Bolsas e Mochilas", img:"fachada",   price:null,  avail:true,  isNew:false, desc:"Mochila resistente para notebook, trabalho e passeio."},
+  {id:12, name:"Semijoias",                       cat:"Semijoias",         img:"presente",  price:null,  avail:true,  isNew:false, desc:"Detalhes em semijoias para usar ou presentear. Consulte modelos."},
+  {id:13, name:"Relógios",                        cat:"Presentes",         img:"interior",  price:null,  avail:true,  isNew:false, desc:"Variedade de relógios em exposição na loja."},
+  {id:14, name:"Carimbos Personalizados",         cat:"Utilidades",        img:"interior",  price:null,  avail:true,  isNew:false, desc:"Fazemos carimbos personalizados. Fale conosco para orçamento."},
+  {id:15, name:"Papelaria e Livros",              cat:"Livraria",          img:"interior",  price:null,  avail:true,  isNew:false, desc:"Itens de papelaria, leitura e estudo. Confira o Lírio Livros."},
+  {id:16, name:"Brinquedos Diversos",             cat:"Brinquedos",        img:"interior",  price:null,  avail:true,  isNew:true,  desc:"Brinquedos para diferentes idades. Sempre chegando novidades."},
+  {id:17, name:"Bonés e Chapéus",                 cat:"Presentes",         img:"interior",  price:null,  avail:true,  isNew:false, desc:"Bonés e chapéus variados. Passe na loja e escolha o seu."},
+  {id:18, name:"Utilidades para o Dia a Dia",     cat:"Utilidades",        img:"interior",  price:null,  avail:false, isNew:false, desc:"Diversos itens úteis para casa. Disponibilidade sob consulta."}
+];
+
+const GIFT_CHIPS = [
+  {l:"Para crianças",e:"🧒",c:"Brinquedos"},{l:"Para ela",e:"💐",c:"Semijoias"},
+  {l:"Para ele",e:"🧢",c:"Presentes"},{l:"Para amigos",e:"🤝",c:"Presentes"},
+  {l:"Datas especiais",e:"🎉",c:"Presentes"},{l:"Lembranças",e:"💝",c:"Presentes"},
+  {l:"Presentes rápidos",e:"⚡",c:"Presentes"}
+];
+
+/* ============================================================
+   FORMATADORES
+   ============================================================ */
+const BRL = n => "R$ " + n.toFixed(2).replace(".",",");
+const priceLabel = p => p==null
+  ? `<span class="price-consult">Consultar preço</span>`
+  : `<span class="price">${BRL(p)}</span>`;
+
+/* ============================================================
+   ESTADO
+   ============================================================ */
+let cart = JSON.parse(localStorage.getItem('lp_cart')||'[]');
+let favs = JSON.parse(localStorage.getItem('lp_favs')||'[]');
+let state = {q:"", cat:"all", price:"all", onlyAvail:false, onlyNew:false, onlyPrice:false, onlyFav:false, sort:"relevance"};
+
+/* ============================================================
+   RENDER: barra de categorias, grade de categorias, gift chips
+   ============================================================ */
+function renderCatbar(){
+  const el=document.getElementById('catbarScroll');
+  el.innerHTML = `<a href="#catalogo" data-cat="all" class="active" onclick="filterByCategory('all')">Tudo</a>` +
+    CATEGORIES.map(c=>`<a href="#catalogo" onclick="filterByCategory('${c.name}')">${c.emoji} ${c.name}</a>`).join('');
+}
+function renderCategories(){
+  document.getElementById('catGrid').innerHTML = CATEGORIES.map(c=>`
+    <a class="cat-card reveal" onclick="filterByCategory('${c.name}')">
+      <div class="${phClass(c.img)}">${phInner(c.img,c.name,c.emoji)}</div>
+      <span class="cat-emoji">${c.emoji}</span>
+      <div class="cat-body">
+        <h3>${c.name}</h3><p>${c.desc}</p>
+        <span class="cat-link">Explorar <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+    </a>`).join('');
+}
+function renderGiftChips(){
+  document.getElementById('giftChips').innerHTML = GIFT_CHIPS.map(g=>
+    `<button class="gift-chip" onclick="filterByCategory('${g.c}')">${g.e} ${g.l}</button>`).join('');
+}
+function renderCatFilters(){
+  const html = `<button class="fchip active" data-cat="all">Tudo</button>` +
+    CATEGORIES.map(c=>`<button class="fchip" data-cat="${c.name}">${c.name}</button>`).join('');
+  document.getElementById('catFilters').innerHTML = html;
+}
+
+/* ============================================================
+   CARD DE PRODUTO
+   ============================================================ */
+function productCard(p){
+  const fav = favs.includes(p.id);
+  const action = !p.avail
+    ? `<button class="add-btn wa" title="Consultar no WhatsApp" aria-label="Consultar ${p.name} no WhatsApp" onclick="event.stopPropagation();consultWA('${p.name.replace(/'/g,"")}')">
+         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.77.46 3.43 1.27 4.88L2 22l5.25-1.38A9.9 9.9 0 0 0 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg></button>`
+    : `<button class="add-btn" title="Adicionar ao carrinho" aria-label="Adicionar ${p.name}" onclick="event.stopPropagation();addToCart(${p.id})">
+         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg></button>`;
+  return `<article class="card reveal" onclick="openProduct(${p.id})">
+    <div class="card-media">
+      <div class="${phClass(p.img)}">${phInner(p.img,p.cat,CATEGORIES.find(c=>c.name===p.cat)?.emoji)}</div>
+      <div class="card-badges">
+        ${p.isNew?'<span class="badge badge-new">✦ Novidade</span>':''}
+        ${!p.avail?'<span class="badge badge-soft">Sob consulta</span>':''}
+      </div>
+      <button class="fav ${fav?'active':''}" aria-label="Favoritar ${p.name}" onclick="event.stopPropagation();toggleFav(${p.id},this)">
+        <svg viewBox="0 0 24 24" fill="${fav?'currentColor':'none'}" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-8.5C.5 9 2 5 5.5 5c2 0 3.5 1.5 4.5 3 1-1.5 2.5-3 4.5-3C18 5 19.5 9 17.5 12.5 15 16.5 12 21 12 21z"/></svg>
+      </button>
+    </div>
+    <div class="card-body">
+      <span class="card-cat">${p.cat}</span>
+      <h3 class="card-name">${p.name}</h3>
+      <p class="card-desc">${p.desc}</p>
+      <div class="card-foot">${priceLabel(p.price)}${action}</div>
+    </div>
+  </article>`;
+}
+
+/* ============================================================
+   FILTRAGEM + RENDER DO CATÁLOGO
+   ============================================================ */
+function applyFilters(){
+  let list = PRODUCTS.slice();
+  if(state.q){
+    const q=state.q.toLowerCase();
+    list=list.filter(p=>(p.name+' '+p.cat+' '+p.desc).toLowerCase().includes(q));
+  }
+  if(state.cat!=='all') list=list.filter(p=>p.cat===state.cat);
+  if(state.price!=='all'){
+    const [min,max]=state.price.split('-').map(Number);
+    list=list.filter(p=>p.price!=null && p.price>=min && p.price<max);
+  }
+  if(state.onlyAvail) list=list.filter(p=>p.avail);
+  if(state.onlyNew)   list=list.filter(p=>p.isNew);
+  if(state.onlyPrice) list=list.filter(p=>p.price!=null);
+  if(state.onlyFav)   list=list.filter(p=>favs.includes(p.id));
+
+  switch(state.sort){
+    case 'new':        list.sort((a,b)=>(b.isNew?1:0)-(a.isNew?1:0)); break;
+    case 'price-asc':  list.sort((a,b)=>(a.price??1e9)-(b.price??1e9)); break;
+    case 'price-desc': list.sort((a,b)=>(b.price??-1)-(a.price??-1)); break;
+    case 'name':       list.sort((a,b)=>a.name.localeCompare(b.name)); break;
+  }
+  return list;
+}
+function renderCatalog(){
+  const list=applyFilters();
+  const grid=document.getElementById('prodGrid');
+  document.getElementById('resultCount').textContent =
+    `${list.length} ${list.length===1?'produto':'produtos'}` + (state.cat!=='all'?` em ${state.cat}`:'');
+  if(!list.length){
+    grid.innerHTML=`<div class="empty"><div class="big">🔍</div><h3>Nada encontrado</h3>
+      <p>Tente outra busca ou fale com a gente pelo WhatsApp.</p>
+      <a href="https://wa.me/${WHATSAPP}" target="_blank" rel="noopener" class="btn btn-wa btn-sm" style="margin-top:14px">Perguntar no WhatsApp</a></div>`;
+  } else {
+    grid.innerHTML=list.map(productCard).join('');
+  }
+  observeReveal();
+}
+function renderNew(){
+  document.getElementById('newGrid').innerHTML =
+    PRODUCTS.filter(p=>p.isNew).slice(0,4).map(productCard).join('');
+}
+
+/* ---- interações de filtro ---- */
+function filterByCategory(cat){
+  state.cat=cat;
+  document.querySelectorAll('#catFilters .fchip').forEach(c=>c.classList.toggle('active',c.dataset.cat===cat));
+  document.querySelectorAll('#catbarScroll a').forEach(a=>a.classList.toggle('active',(a.dataset.cat||a.textContent.replace(/^.\s/,'').trim())===cat|| (cat==='all'&&a.dataset.cat==='all')));
+  renderCatalog();
+  document.getElementById('catalogo').scrollIntoView({behavior:'smooth'});
+}
+document.addEventListener('click',e=>{
+  const chip=e.target.closest('#catFilters .fchip, #priceFilters .fchip');
+  if(!chip) return;
+  if(chip.dataset.cat!==undefined){
+    state.cat=chip.dataset.cat;
+    document.querySelectorAll('#catFilters .fchip').forEach(c=>c.classList.remove('active'));
+    chip.classList.add('active');
+  }
+  if(chip.dataset.price!==undefined){
+    state.price=chip.dataset.price;
+    document.querySelectorAll('#priceFilters .fchip').forEach(c=>c.classList.remove('active'));
+    chip.classList.add('active');
+  }
+  renderCatalog();
+});
+
+/* ============================================================
+   CARRINHO
+   ============================================================ */
+function saveCart(){localStorage.setItem('lp_cart',JSON.stringify(cart));updateCartUI();}
+function addToCart(id,qty=1,silent=false){
+  const p=PRODUCTS.find(x=>x.id===id); if(!p) return;
+  const line=cart.find(i=>i.id===id);
+  if(line) line.qty+=qty; else cart.push({id,qty});
+  saveCart();
+  if(!silent) toast(`${p.name} adicionado ao carrinho`);
+  bump();
+}
+function removeFromCart(id){cart=cart.filter(i=>i.id!==id);saveCart();renderCartDrawer();}
+function setQty(id,d){
+  const line=cart.find(i=>i.id===id); if(!line) return;
+  line.qty+=d; if(line.qty<=0) cart=cart.filter(i=>i.id!==id);
+  saveCart();renderCartDrawer();
+}
+function clearCart(){cart=[];saveCart();renderCartDrawer();toast('Carrinho esvaziado');}
+function cartCount(){return cart.reduce((s,i)=>s+i.qty,0);}
+function cartTotal(){return cart.reduce((s,i)=>{const p=PRODUCTS.find(x=>x.id===i.id);return s+(p&&p.price?p.price*i.qty:0);},0);}
+function cartHasConsult(){return cart.some(i=>{const p=PRODUCTS.find(x=>x.id===i.id);return p&&p.price==null;});}
+
+function updateCartUI(){
+  const n=cartCount();
+  const cc=document.getElementById('cartCount');
+  cc.textContent=n; cc.classList.toggle('show',n>0);
+  const bn=document.getElementById('bnCount');
+  bn.textContent=n; bn.style.display=n>0?'grid':'none';
+}
+function bump(){
+  const cc=document.getElementById('cartCount');
+  cc.style.transform='scale(1.4)';setTimeout(()=>cc.style.transform='',180);
+}
+function renderCartDrawer(){
+  const body=document.getElementById('cartBody');
+  const foot=document.getElementById('cartFoot');
+  if(!cart.length){
+    body.innerHTML=`<div class="cart-empty"><div class="big">🛒</div><h3>Seu carrinho está vazio</h3>
+      <p style="margin-top:6px">Explore o catálogo e adicione produtos.</p>
+      <button class="btn btn-primary btn-sm" style="margin-top:16px" onclick="closeAll();document.getElementById('catalogo').scrollIntoView({behavior:'smooth'})">Ver produtos</button></div>`;
+    foot.innerHTML=''; updateCartUI(); return;
+  }
+  body.innerHTML=cart.map(i=>{
+    const p=PRODUCTS.find(x=>x.id===i.id);
+    return `<div class="cart-item">
+      <div class="thumb"><div class="${phClass(p.img)}" style="height:66px">${phInner(p.img,p.cat,'')}</div></div>
+      <div class="ci-info">
+        <div class="ci-name">${p.name}</div>
+        <div class="ci-price">${p.price!=null?BRL(p.price):'Consultar preço'}</div>
+        <div class="qty"><button onclick="setQty(${p.id},-1)" aria-label="Diminuir">−</button><span>${i.qty}</span><button onclick="setQty(${p.id},1)" aria-label="Aumentar">+</button></div>
+        <button class="ci-remove" onclick="removeFromCart(${p.id})">✕ Remover</button>
+      </div>
+      <div style="text-align:right;font-family:var(--font-display);font-weight:700">${p.price!=null?BRL(p.price*i.qty):'—'}</div>
+    </div>`;
+  }).join('');
+  const total=cartTotal();
+  const totalStr=total>0?BRL(total):'A combinar';
+  foot.innerHTML=`
+    ${total>0?`<div class="summ-row"><span>Subtotal (itens com preço)</span><b>${BRL(total)}</b></div>`:''}
+    ${cartHasConsult()?`<div class="summ-row"><span>Itens sob consulta</span><b>a confirmar na loja</b></div>`:''}
+    <div class="summ-row total"><span>Total</span><span>${totalStr}</span></div>
+    <button class="btn btn-primary btn-block" style="margin-top:14px" onclick="startCheckout()">Finalizar compra</button>
+    <button class="btn btn-ghost btn-block btn-sm" style="margin-top:8px" onclick="clearCart()">Limpar carrinho</button>
+    <p class="cart-note">Compre online e retire na Lírio Pimenta. Pagamento combinado na loja ou pelo WhatsApp.</p>`;
+  updateCartUI();
+}
+
+/* ============================================================
+   MODAL DE PRODUTO
+   ============================================================ */
+let modalQty=1;
+function openProduct(id){
+  const p=PRODUCTS.find(x=>x.id===id); if(!p) return;
+  modalQty=1;
+  const emoji=CATEGORIES.find(c=>c.name===p.cat)?.emoji||'📦';
+  const action = !p.avail
+    ? `<button class="btn btn-wa btn-block" onclick="consultWA('${p.name.replace(/'/g,"")}')">
+         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.77.46 3.43 1.27 4.88L2 22l5.25-1.38A9.9 9.9 0 0 0 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg> Consultar no WhatsApp</button>`
+    : `<div class="pd-qtyrow"><span style="color:var(--ink-500);font-size:.9rem">Quantidade</span>
+         <div class="qty"><button onclick="modalStep(-1)">−</button><span id="mQty">1</span><button onclick="modalStep(1)">+</button></div></div>
+       <button class="btn btn-primary btn-block" onclick="addToCart(${p.id},modalQty);closeAll()">Adicionar ao carrinho</button>
+       <button class="btn btn-wa btn-block" onclick="consultWA('${p.name.replace(/'/g,"")}')">Comprar pelo WhatsApp</button>`;
+  document.getElementById('prodModalBody').innerHTML=`
+    <div class="pd-media"><div class="${phClass(p.img)}">${phInner(p.img,p.cat,emoji)}</div></div>
+    <div class="pd-info">
+      <button class="close-x pd-close" onclick="closeAll()" aria-label="Fechar">✕</button>
+      <span class="card-cat">${p.cat} ${p.isNew?'· ✦ Novidade':''}</span>
+      <h2>${p.name}</h2>
+      <p class="pd-desc">${p.desc}</p>
+      <div class="pd-meta">
+        <div class="m"><span>Categoria</span><b>${p.cat}</b></div>
+        <div class="m"><span>Disponibilidade</span><b style="color:${p.avail?'var(--ok)':'var(--red-500)'}">${p.avail?'Disponível na loja':'Sob consulta'}</b></div>
+        <div class="m"><span>Retirada</span><b>Na loja — Centro, Viamão</b></div>
+      </div>
+      ${p.price!=null?`<div class="pd-price">${BRL(p.price)}</div><small style="color:var(--ink-500)">Preço de referência — confirme na loja.</small>`
+        :`<div class="pd-price" style="font-size:1.3rem;color:var(--gold-600)">Consultar preço</div><small style="color:var(--ink-500)">Confirme o valor na loja ou pelo WhatsApp.</small>`}
+      <div class="pd-actions">${action}</div>
+    </div>`;
+  openModal('prodModal');
+}
+function modalStep(d){modalQty=Math.max(1,modalQty+d);document.getElementById('mQty').textContent=modalQty;}
+
+/* ============================================================
+   FAVORITOS
+   ============================================================ */
+function toggleFav(id,btn){
+  if(favs.includes(id)){favs=favs.filter(f=>f!==id);} else {favs.push(id);toast('Adicionado aos favoritos ❤');}
+  localStorage.setItem('lp_favs',JSON.stringify(favs));
+  if(btn){const on=favs.includes(id);btn.classList.toggle('active',on);btn.querySelector('svg').setAttribute('fill',on?'currentColor':'none');}
+  if(state.onlyFav) renderCatalog();
+}
+
+/* ============================================================
+   WHATSAPP
+   ============================================================ */
+function waLink(msg){return `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;}
+function consultWA(name){
+  window.open(waLink(`Olá! Vi "${name}" no site da Lírio Pimenta e gostaria de saber o preço e a disponibilidade.`),'_blank');
+}
+
+/* ============================================================
+   CHECKOUT (demo, 5 etapas)
+   ============================================================ */
+let coStep=1;
+const coData={name:"",phone:"",method:"retirada",notes:""};
+function startCheckout(){
+  if(!cart.length){toast('Seu carrinho está vazio');return;}
+  coStep=1; closeAll(); openModal('coModal'); renderCheckout();
+}
+function renderSteps(){
+  const labels=['Carrinho','Dados','Entrega','Revisão','Pronto'];
+  document.getElementById('coSteps').innerHTML=labels.map((l,i)=>{
+    const n=i+1; const cls=n<coStep?'done':n===coStep?'active':'';
+    return `<div class="step ${cls}"><span class="n">${n<coStep?'✓':n}</span>${l}</div>`+
+      (i<labels.length-1?'<span class="step-line"></span>':'');
+  }).join('');
+}
+function renderCheckout(){
+  renderSteps();
+  const body=document.getElementById('coBody');
+  const foot=document.getElementById('coFoot');
+  const total=cartTotal();
+  if(coStep===1){
+    body.innerHTML=`<h3 style="margin-bottom:14px">Seu carrinho</h3>`+
+      cart.map(i=>{const p=PRODUCTS.find(x=>x.id===i.id);
+        return `<div class="review-box" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+          <div><b style="font-family:var(--font-display)">${p.name}</b><br><small style="color:var(--ink-500)">Qtd: ${i.qty} · ${p.price!=null?BRL(p.price):'Consultar preço'}</small></div>
+          <b>${p.price!=null?BRL(p.price*i.qty):'—'}</b></div>`;}).join('')+
+      `<div class="summ-row total"><span>Total</span><span>${total>0?BRL(total):'A combinar'}</span></div>`;
+    foot.innerHTML=`<button class="btn btn-ghost" onclick="closeAll()">Continuar comprando</button>
+      <button class="btn btn-primary" onclick="coNext()">Avançar</button>`;
+  }
+  else if(coStep===2){
+    body.innerHTML=`<h3 style="margin-bottom:14px">Seus dados</h3>
+      <div class="field"><label for="coName">Nome completo *</label><input id="coName" value="${coData.name}" placeholder="Como podemos te chamar?"></div>
+      <div class="field"><label for="coPhone">Telefone / WhatsApp *</label><input id="coPhone" value="${coData.phone}" placeholder="(51) 9....."></div>
+      <p style="font-size:.82rem;color:var(--ink-500)">Usaremos apenas para combinar a retirada/entrega. Nenhum dado é enviado neste demo.</p>`;
+    foot.innerHTML=`<button class="btn btn-ghost" onclick="coBack()">Voltar</button>
+      <button class="btn btn-primary" onclick="saveStep2()">Avançar</button>`;
+  }
+  else if(coStep===3){
+    body.innerHTML=`<h3 style="margin-bottom:14px">Como prefere receber?</h3>
+      <label class="radio-card ${coData.method==='retirada'?'sel':''}"><input type="radio" name="mt" ${coData.method==='retirada'?'checked':''} onchange="coData.method='retirada';markRadio(this)">
+        <div><b>🏪 Retirar na Lírio Pimenta</b><p>Rua Ramiro Barcelos, 84 — Centro, Viamão/RS. Compre online e retire na loja.</p></div></label>
+      <label class="radio-card ${coData.method==='entrega'?'sel':''}"><input type="radio" name="mt" ${coData.method==='entrega'?'checked':''} onchange="coData.method='entrega';markRadio(this)">
+        <div><b>🛵 Consultar entrega pelo WhatsApp</b><p>Combinamos a entrega e o valor direto com você pelo WhatsApp.</p></div></label>
+      <div class="field" style="margin-top:6px"><label for="coNotes">Observações (opcional)</label><textarea id="coNotes" rows="2" placeholder="Alguma preferência ou dúvida?">${coData.notes}</textarea></div>`;
+    foot.innerHTML=`<button class="btn btn-ghost" onclick="coBack()">Voltar</button>
+      <button class="btn btn-primary" onclick="saveStep3()">Revisar pedido</button>`;
+  }
+  else if(coStep===4){
+    body.innerHTML=`<h3 style="margin-bottom:14px">Revise seu pedido</h3>
+      <div class="review-box">
+        <div class="rl"><span>Nome</span><b>${coData.name||'—'}</b></div>
+        <div class="rl"><span>Contato</span><b>${coData.phone||'—'}</b></div>
+        <div class="rl"><span>Forma</span><b>${coData.method==='retirada'?'Retirar na loja':'Consultar entrega'}</b></div>
+        ${coData.notes?`<div class="rl"><span>Obs.</span><b>${coData.notes}</b></div>`:''}
+      </div>
+      <div class="review-box" style="margin-top:12px">
+        ${cart.map(i=>{const p=PRODUCTS.find(x=>x.id===i.id);
+          return `<div class="rl"><span>${i.qty}× ${p.name}</span><b>${p.price!=null?BRL(p.price*i.qty):'Consultar'}</b></div>`;}).join('')}
+        <div class="rl" style="border-top:1px solid var(--line);margin-top:6px;padding-top:10px"><span><b>Total${total>0?' (itens com preço)':''}</b></span><b>${total>0?BRL(total):'A combinar'}</b></div>
+      </div>
+      <p style="font-size:.82rem;color:var(--ink-500);margin-top:12px">Ao finalizar, abriremos o WhatsApp da loja com o resumo do seu pedido para você enviar.</p>`;
+    foot.innerHTML=`<button class="btn btn-ghost" onclick="coBack()">Voltar</button>
+      <button class="btn btn-wa" onclick="finishCheckout()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.77.46 3.43 1.27 4.88L2 22l5.25-1.38A9.9 9.9 0 0 0 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+        Enviar pedido no WhatsApp</button>`;
+  }
+  else if(coStep===5){
+    body.innerHTML=`<div class="success-wrap">
+      <div class="success-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></div>
+      <h2 style="font-size:1.5rem">Pedido preparado! 🎉</h2>
+      <p style="color:var(--ink-500);margin-top:10px;max-width:38ch;margin-inline:auto">Abrimos o WhatsApp da Lírio Pimenta com o resumo do seu pedido. É só enviar a mensagem para combinar a retirada ou entrega.</p>
+      <p style="font-size:.8rem;color:var(--ink-300);margin-top:14px">Demonstração — nenhum pedido foi realmente processado.</p>
+    </div>`;
+    foot.innerHTML=`<span></span><button class="btn btn-primary" onclick="cart=[];saveCart();closeAll()">Concluir</button>`;
+  }
+}
+function markRadio(input){document.querySelectorAll('#coBody .radio-card').forEach(r=>r.classList.remove('sel'));input.closest('.radio-card').classList.add('sel');}
+function coNext(){coStep++;renderCheckout();}
+function coBack(){coStep--;renderCheckout();}
+function saveStep2(){
+  const n=document.getElementById('coName').value.trim();
+  const ph=document.getElementById('coPhone').value.trim();
+  if(!n||!ph){toast('Preencha nome e telefone');return;}
+  coData.name=n;coData.phone=ph;coNext();
+}
+function saveStep3(){coData.notes=document.getElementById('coNotes').value.trim();coNext();}
+function buildOrderMsg(){
+  let m=`*Pedido — Lírio Pimenta*\n\n*Cliente:* ${coData.name}\n*Contato:* ${coData.phone}\n*Forma:* ${coData.method==='retirada'?'Retirar na loja':'Consultar entrega'}\n`;
+  if(coData.notes) m+=`*Obs.:* ${coData.notes}\n`;
+  m+=`\n*Itens:*\n`;
+  cart.forEach(i=>{const p=PRODUCTS.find(x=>x.id===i.id);
+    m+=`• ${i.qty}× ${p.name} — ${p.price!=null?BRL(p.price*i.qty):'a confirmar'}\n`;});
+  m+=cartTotal()>0?`\n*Total (itens com preço):* ${BRL(cartTotal())}`:`\n*Total:* a combinar`;
+  if(cartHasConsult()) m+=`\n_Alguns itens estão sob consulta de preço._`;
+  m+=`\n\n_Enviado pelo site da Lírio Pimenta._`;
+  return m;
+}
+function finishCheckout(){
+  window.open(waLink(buildOrderMsg()),'_blank');
+  coStep=5;renderCheckout();
+}
+
+/* ============================================================
+   HORÁRIO DINÂMICO
+   ============================================================ */
+const HOURS=[
+  {d:"Domingo",   open:null,close:null},
+  {d:"Segunda",   open:"09:00",close:"18:30"},
+  {d:"Terça",     open:"09:00",close:"18:30"},
+  {d:"Quarta",    open:"09:00",close:"18:30"},
+  {d:"Quinta",    open:"08:30",close:"18:30"},
+  {d:"Sexta",     open:"08:30",close:"18:30"},
+  {d:"Sábado",    open:"08:30",close:"18:30"}
+];
+function renderHours(){
+  const now=new Date(); const day=now.getDay();
+  const cur=now.getHours()*60+now.getMinutes();
+  const toMin=t=>{const[h,m]=t.split(':').map(Number);return h*60+m;};
+  const today=HOURS[day];
+  let isOpen=false;
+  if(today.open){isOpen = cur>=toMin(today.open) && cur<toMin(today.close);}
+  const st=document.getElementById('hoursStatus');
+  st.className='hours-status '+(isOpen?'open':'closed');
+  st.innerHTML=`<span class="dot" style="background:${isOpen?'var(--ok)':'var(--red-500)'}"></span>
+    <span>${isOpen?'Aberto agora':'Fechado agora'}</span>`;
+  document.getElementById('hoursList').innerHTML=HOURS.map((h,i)=>
+    `<li class="${i===day?'today':''}"><span>${h.d}</span><span>${h.open?h.open+' — '+h.close:'Fechado'}</span></li>`).join('');
+}
+
+/* ============================================================
+   INSTAGRAM GRID
+   ============================================================ */
+function renderIG(){
+  const cells=[
+    {img:"fachada",g:"🏪"},{img:"pilhas",g:"🔋"},{img:"tabacaria",g:"🚬"},{img:"presente",g:"🎁"},
+    {img:"interior",g:"🛍️"},{img:"pessoas",g:"👋"},{img:"fachada2",g:"🏬"},{img:"interior",g:"🧸"}
+  ];
+  document.getElementById('igGrid').innerHTML=cells.map(c=>`
+    <a class="ig-cell" href="${INSTAGRAM}" target="_blank" rel="noopener" aria-label="Ver no Instagram">
+      <div class="${phClass(c.img)}">${phInner(c.img,'Destaque',c.g)}</div>
+      <div class="ig-ov"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></div>
+    </a>`).join('');
+}
+
+/* ============================================================
+   PAINEL ADMIN (prévia)
+   ============================================================ */
+function renderAdmin(){
+  const priced=PRODUCTS.filter(p=>p.price!=null);
+  document.getElementById('adminBody').innerHTML=`
+    <div class="admin-side">
+      <div class="as-brand">Lírio Pimenta</div>
+      <a class="active">📊 Visão geral</a><a>📦 Produtos</a><a>🗂️ Estoque</a>
+      <a>🧾 Pedidos</a><a>🏷️ Categorias</a><a>👥 Clientes</a>
+      <a>💬 Mensagens</a><a>📸 Instagram</a><a>💰 Vendas</a>
+    </div>
+    <div class="admin-main">
+      <div class="kpi-row">
+        <div class="kpi"><div class="kv">${PRODUCTS.length}</div><div class="kl">Produtos no catálogo</div><div class="kt">catálogo demo</div></div>
+        <div class="kpi"><div class="kv">${CATEGORIES.length}</div><div class="kl">Categorias</div><div class="kt">ativas</div></div>
+        <div class="kpi"><div class="kv">${PRODUCTS.filter(p=>p.isNew).length}</div><div class="kl">Novidades</div><div class="kt">↑ chegando</div></div>
+        <div class="kpi"><div class="kv">${priced.length}</div><div class="kl">Com preço definido</div><div class="kt">${PRODUCTS.length-priced.length} sob consulta</div></div>
+      </div>
+      <h4 style="font-family:var(--font-display);margin-bottom:12px">Produtos (exemplo)</h4>
+      <table class="admin-table">
+        <thead><tr><th>Produto</th><th>Categoria</th><th>Preço</th><th>Status</th></tr></thead>
+        <tbody>
+        ${PRODUCTS.slice(0,7).map(p=>`<tr>
+          <td><b style="font-family:var(--font-display);font-weight:600">${p.name}</b></td>
+          <td>${p.cat}</td>
+          <td>${p.price!=null?BRL(p.price):'<span style="color:var(--gold-600)">Consultar</span>'}</td>
+          <td>${!p.avail?'<span class="tag-st out">Sob consulta</span>':p.isNew?'<span class="tag-st low">Novidade</span>':'<span class="tag-st ok">Disponível</span>'}</td>
+        </tr>`).join('')}
+        </tbody>
+      </table>
+      <p style="font-size:.8rem;color:var(--ink-500);margin-top:16px">Prévia conceitual do futuro painel administrativo — sem backend real. Fases: catálogo → e-commerce → estoque → pagamento online → painel → WhatsApp → CRM.</p>
+    </div>`;
+}
+
+/* ============================================================
+   OVERLAY / MODAIS / DRAWERS
+   ============================================================ */
+const overlay=document.getElementById('overlay');
+let lastFocus=null;
+function lockScroll(v){document.body.style.overflow=v?'hidden':'';}
+function openDrawer(id){lastFocus=document.activeElement;document.getElementById(id).classList.add('show');overlay.classList.add('show');lockScroll(true);}
+function openModal(id){lastFocus=document.activeElement;document.getElementById(id).classList.add('show');overlay.classList.add('show');lockScroll(true);}
+function closeAll(){
+  document.querySelectorAll('.drawer.show,.modal.show,.mmenu.show').forEach(e=>e.classList.remove('show'));
+  overlay.classList.remove('show');lockScroll(false);
+  if(lastFocus&&lastFocus.focus)lastFocus.focus();
+}
+overlay.addEventListener('click',closeAll);
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeAll();});
+
+/* ============================================================
+   TOAST
+   ============================================================ */
+function toast(msg){
+  const el=document.createElement('div');
+  el.className='toast';
+  el.innerHTML=`<span class="tic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>${msg}`;
+  document.getElementById('toastWrap').appendChild(el);
+  requestAnimationFrame(()=>el.classList.add('show'));
+  setTimeout(()=>{el.classList.remove('show');setTimeout(()=>el.remove(),350);},2600);
+}
+
+/* ============================================================
+   REVEAL ON SCROLL
+   ============================================================ */
+let io;
+function observeReveal(){
+  if(!io){
+    io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+  }
+  document.querySelectorAll('.reveal:not(.in)').forEach(el=>io.observe(el));
+}
+
+/* ============================================================
+   FILTROS MOBILE (drawer)
+   ============================================================ */
+function buildMobileFilters(){
+  const src=document.getElementById('filtersPanel').cloneNode(true);
+  src.id='';src.classList.remove('filters');src.style.position='static';src.style.border='none';src.style.padding='0';
+  const wrap=document.getElementById('filtersDrawerBody');
+  wrap.innerHTML='';wrap.appendChild(src);
+}
+
+/* ============================================================
+   EVENTOS DE UI
+   ============================================================ */
+document.getElementById('openCart').onclick=()=>{renderCartDrawer();openDrawer('cartDrawer');};
+document.getElementById('bnCart').onclick=(e)=>{e.preventDefault();renderCartDrawer();openDrawer('cartDrawer');};
+document.getElementById('closeCart').onclick=closeAll;
+document.getElementById('openMenu').onclick=()=>openDrawer('mmenu');
+document.getElementById('closeMenu').onclick=closeAll;
+document.querySelectorAll('#mmenu a[href^="#"]').forEach(a=>a.addEventListener('click',closeAll));
+document.getElementById('openAdmin').onclick=()=>{renderAdmin();openModal('adminModal');};
+document.getElementById('closeAdmin').onclick=closeAll;
+document.getElementById('openSearch').onclick=()=>{document.getElementById('catalogo').scrollIntoView({behavior:'smooth'});setTimeout(()=>document.getElementById('searchInput').focus(),500);};
+document.getElementById('bnSearch').onclick=()=>{setTimeout(()=>document.getElementById('searchInput').focus(),500);};
+document.getElementById('openFilters').onclick=()=>{buildMobileFilters();openDrawer('filtersDrawer');};
+document.getElementById('closeFilters').onclick=closeAll;
+
+const searchInput=document.getElementById('searchInput');
+let searchT;
+searchInput.addEventListener('input',e=>{clearTimeout(searchT);searchT=setTimeout(()=>{state.q=e.target.value;renderCatalog();},220);});
+document.getElementById('sortSelect').onchange=e=>{state.sort=e.target.value;renderCatalog();};
+document.getElementById('fltAvailable').onchange=e=>{state.onlyAvail=e.target.checked;renderCatalog();};
+document.getElementById('fltNew').onchange=e=>{state.onlyNew=e.target.checked;renderCatalog();};
+document.getElementById('fltPrice').onchange=e=>{state.onlyPrice=e.target.checked;renderCatalog();};
+document.getElementById('clearFilters').onclick=()=>{
+  state={q:"",cat:"all",price:"all",onlyAvail:false,onlyNew:false,onlyPrice:false,onlyFav:false,sort:state.sort};
+  searchInput.value='';
+  document.querySelectorAll('#fltAvailable,#fltNew,#fltPrice').forEach(c=>c.checked=false);
+  document.querySelectorAll('#catFilters .fchip,#priceFilters .fchip').forEach(c=>c.classList.remove('active'));
+  document.querySelector('#catFilters .fchip[data-cat="all"]').classList.add('active');
+  document.querySelector('#priceFilters .fchip[data-price="all"]').classList.add('active');
+  renderCatalog();toast('Filtros limpos');
+};
+const favToggleBtn=document.getElementById('favToggle');
+favToggleBtn.onclick=()=>{state.onlyFav=!state.onlyFav;favToggleBtn.classList.toggle('btn-primary',state.onlyFav);favToggleBtn.classList.toggle('btn-ghost',!state.onlyFav);renderCatalog();};
+
+/* Facebook — só ativa se URL oficial for informada */
+const fb=document.getElementById('fbLink');
+if(FACEBOOK_URL && FACEBOOK_URL!=="INSERIR_URL_OFICIAL_DO_FACEBOOK"){fb.href=FACEBOOK_URL;}
+else{fb.addEventListener('click',e=>{e.preventDefault();toast('Facebook: informe a URL oficial na configuração.');});}
+
+/* Header scroll + scrollspy */
+const header=document.getElementById('header');
+const spy=[...document.querySelectorAll('section[id],nav[id]')];
+window.addEventListener('scroll',()=>{
+  header.classList.toggle('scrolled',window.scrollY>20);
+},{passive:true});
+
+/* ============================================================
+   INIT
+   ============================================================ */
+function applyLogo(){
+  if(!IMAGES.logo) return;
+  document.querySelectorAll('.brand-mark').forEach(m=>{
+    m.classList.add('has-logo');
+    m.innerHTML=`<img src="${IMAGES.logo}" alt="Lírio Pimenta">`;
+  });
+}
+function init(){
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  applyLogo();
+  hydratePlaceholders();
+  renderCatbar();
+  renderCategories();
+  renderCatFilters();
+  renderGiftChips();
+  renderNew();
+  renderCatalog();
+  renderHours();
+  renderIG();
+  updateCartUI();
+  observeReveal();
+  setInterval(renderHours,60000);
+}
+document.addEventListener('DOMContentLoaded',init);
+</script>
+</body>
+</html>
