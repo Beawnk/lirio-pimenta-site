@@ -1,3 +1,13 @@
+/* Alvos de âncora: #categorias, #catalogo, #historia…
+   scroll-margin-top vale tanto para o clique no link quanto para o
+   scrollIntoView do JavaScript. */
+section[id],
+nav[id],
+main[id],
+span[id] {
+  scroll-margin-top: var(--scroll-offset);
+}
+
 .container {
   width: 100%;
   max-width: var(--container);

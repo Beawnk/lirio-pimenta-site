@@ -53,7 +53,16 @@
 
   --container: 1220px;
   --header-h: 74px;
+  --catbar-h: 57px;
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  /* Header e barra de categorias são sticky e cobrem o topo da tela.
+     Toda âncora precisa parar abaixo das duas, com uma folga — senão o
+     título da seção nasce colado na barra ou escondido atrás dela.
+     O calc lê --header-h na hora do uso, então acompanha o mobile.
+     --catbar-h é medido, não calculado: se a barra de categorias mudar de
+     altura (troca dos emojis por ícones, por exemplo), ajuste aqui. */
+  --scroll-offset: calc(var(--header-h) + var(--catbar-h) + var(--sp-5));
 }
 
 @media (max-width: 640px) {
