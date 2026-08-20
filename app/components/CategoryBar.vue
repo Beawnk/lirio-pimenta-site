@@ -11,7 +11,7 @@ const catalog = useCatalogStore()
       <div class="catbar-scroll">
         <button
           type="button"
-          :class="{ active: catalog.category === 'all' }"
+          :class="{ active: catalog.filters.category === 'all' }"
           @click="catalog.selectCategory('all')"
         >
           Tudo
@@ -20,7 +20,7 @@ const catalog = useCatalogStore()
           v-for="category in CATEGORIES"
           :key="category.name"
           type="button"
-          :class="{ active: catalog.category === category.name }"
+          :class="{ active: catalog.filters.category === category.name }"
           @click="catalog.selectCategory(category.name)"
         >
           {{ category.emoji }} {{ category.name }}

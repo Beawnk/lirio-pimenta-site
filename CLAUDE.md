@@ -75,11 +75,15 @@ npx vitest run tests/cart.test.js -t "remove item"
 
 ## Estado atual do repositório
 
-A portagem da demo está em andamento, em etapas. **Pronto:** a casca — SCSS global
-(`app/assets/scss/`), dados (`app/data/`), `useWhatsApp`, `ProductImage`, o store `ui`
-(um painel aberto por vez + trava de scroll), header, rodapé, menu mobile, bottom nav,
-FAB do WhatsApp e o layout. **Falta:** as seções da home, o catálogo com filtros e o
-carrinho → WhatsApp — `app/pages/index.vue` ainda tem só as âncoras vazias.
+A portagem da demo está em andamento, em etapas. **Pronto:** a casca (header, rodapé,
+menu mobile, bottom nav, FAB, layout), as seções da home e o catálogo — busca, filtros,
+favoritos, ordenação e modal de produto. **Falta só o carrinho → WhatsApp**: o
+`CartDrawer` existe apenas com o estado vazio, e não há store de carrinho.
+
+Estado compartilhado em três stores Pinia: `ui` (qual painel está aberto + trava de
+scroll), `catalog` (filtros e produto selecionado) e `favorites` (`lp_favs`). A lógica
+de filtrar é uma função pura em `app/composables/useCatalog.js`, testada em
+`tests/catalog.test.js` sem montar componente.
 
 ```
 app/

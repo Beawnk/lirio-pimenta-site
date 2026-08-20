@@ -31,5 +31,7 @@ onUnmounted(() => document.removeEventListener('keydown', onKeydown))
     <AppOverlay />
     <MobileMenu />
     <CartDrawer />
+    <FiltersDrawer />
+    <ProductModal />
   </div>
 </template>

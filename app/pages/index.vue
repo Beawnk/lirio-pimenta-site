@@ -7,13 +7,9 @@
     <TrustStrip />
     <CategoryGrid />
 
-    <!-- Novidades e catálogo entram na etapa do catálogo: as duas seções
-         usam o mesmo ProductCard, então saem juntas. -->
-    <section id="novidades" class="section section--soft" />
-
+    <NewArrivals />
     <DiscoverSection />
-
-    <section id="catalogo" class="section" />
+    <CatalogSection />
 
     <GiftsSection />
     <HistorySection />
