@@ -75,9 +75,9 @@ npx vitest run tests/cart.test.js -t "remove item"
 
 ## Estado atual do repositório
 
-A Fase A está portada: casca, seções da home, catálogo (busca, filtros, favoritos,
-ordenação, modal) e carrinho → WhatsApp. Falta o carrossel de banners e a troca dos
-emojis por ícones SVG.
+A Fase A está portada: casca, seções da home, carrossel de banners, catálogo (busca,
+filtros, favoritos, ordenação, modal), carrinho → WhatsApp e ícones SVG no lugar dos
+emojis.
 
 **O padrão do projeto:** regra de negócio vira função pura em `app/composables/`
 (`useCatalog.js`, `useCart.js`) — sem Vue dentro, testada direto em `tests/`. O store
@@ -132,7 +132,8 @@ de onde a versão Nuxt sai. Três blocos:
 
 - `PRODUCTS`: `{ id, name, cat, img, price, avail, isNew, desc }` — 18 itens de exemplo,
   todos com `price: null`. `cat` é o **nome** da categoria, não um id.
-- `CATEGORIES`: `{ name, emoji, img, desc }` — 8 categorias.
+- `CATEGORIES`: `{ name, emoji, img, desc }` — 8 categorias. Na versão Nuxt virou
+  `{ name, icon, image, desc }`: `emoji` deu lugar à chave de <AppIcon>, e `img` a `image`.
 - `GIFT_CHIPS`: atalhos "Para ela", "Para crianças"… que caem numa categoria.
 - `IMAGES`: mapa de chave lógica (`fachada`, `pilhas`, `logo`…) → caminho do arquivo.
   Os componentes devem receber a chave, não o caminho.
@@ -152,8 +153,17 @@ Reaproveite o CSS existente. **Não reescreva o design e não proponha Tailwind.
 - Tipografia: Poppins (display) + Inter (texto).
 - Escalas: `--sp-1..9`, `--r-sm..pill`, `--sh-1..3`, `--container: 1220px`.
 
-Exceção conhecida: **os emojis devem sair.** Categorias, gift chips, estados vazios e
-badges usam emoji e serão trocados por ícones SVG.
+Exceção já resolvida: **não existe mais emoji na interface.** Categorias, gift chips,
+estados vazios, badges e os glifos de controle (fechar, etapa, quantidade, setas) são
+ícones SVG.
+
+**Ícone é componente, não biblioteca.** Cada um é um `Icon*.vue` de poucas linhas em
+`app/components/`, sempre `viewBox="0 0 24 24"`, `stroke="currentColor"`, `stroke-width="2"`
+e **sem width/height** — quem consome dimensiona pelo CSS. Os desenhos vêm do Lucide
+(MIT), copiados para o repositório: não instale `lucide-vue-next` nem `@nuxt/icon`.
+Quando o ícone é fixo no template, use `<IconGift />` direto; quando vem de dado, o dado
+guarda uma chave de texto (`icon: 'gift'`) e `<AppIcon :name="..." />` resolve — assim
+`app/data/` continua sem conhecer Vue.
 
 ---
 

@@ -39,6 +39,7 @@ function addToCart() {
     role="dialog"
     aria-modal="true"
     aria-label="Detalhes do produto"
+    @click.self="ui.close()"
   >
     <div v-if="product" class="modal-card">
       <div class="modal-scroll">
