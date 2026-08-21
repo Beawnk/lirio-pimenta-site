@@ -7,7 +7,7 @@ const props = defineProps({
 })
 
 const cart = useCartStore()
-const emoji = findCategory(props.line.product.category)?.emoji || '📦'
+const icon = findCategory(props.line.product.category)?.icon || 'package'
 </script>
 
 <template>
@@ -16,7 +16,7 @@ const emoji = findCategory(props.line.product.category)?.emoji || '📦'
       <ProductImage
         :image-key="line.product.image"
         :label="line.product.category"
-        :glyph="emoji"
+        :icon="icon"
       />
     </div>
 

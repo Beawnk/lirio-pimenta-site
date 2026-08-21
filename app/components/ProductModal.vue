@@ -17,7 +17,7 @@ const ui = useUiStore()
 const { consultLink } = useWhatsApp()
 
 const product = computed(() => catalog.selectedProduct)
-const emoji = computed(() => (product.value ? findCategory(product.value.category)?.emoji : '📦'))
+const icon = computed(() => (product.value && findCategory(product.value.category)?.icon) || 'package')
 
 /* A quantidade volta para 1 a cada produto aberto */
 const qty = ref(1)
@@ -47,7 +47,7 @@ function addToCart() {
             <ProductImage
               :image-key="product.image"
               :label="product.category"
-              :glyph="emoji"
+              :icon="icon"
             />
           </div>
 

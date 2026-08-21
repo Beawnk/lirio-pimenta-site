@@ -16,7 +16,7 @@ const favorites = useFavoritesStore()
 const toast = useToastStore()
 const { consultLink } = useWhatsApp()
 
-const emoji = findCategory(props.product.category)?.emoji || '📦'
+const icon = findCategory(props.product.category)?.icon || 'package'
 
 /* Produto sob consulta não entra no carrinho: não dá para prometer o que
    pode não existir na prateleira. Esse vai direto para a conversa. */
@@ -29,7 +29,7 @@ function addToCart() {
 <template>
   <article v-reveal class="card reveal">
     <div class="card-media" role="button" tabindex="0" @click="catalog.openProduct(product.id)" @keydown.enter="catalog.openProduct(product.id)">
-      <ProductImage :image-key="product.image" :label="product.category" :glyph="emoji" />
+      <ProductImage :image-key="product.image" :label="product.category" :icon="icon" />
 
       <div class="card-badges">
         <span v-if="product.isNew" class="badge badge-new">✦ Novidade</span>

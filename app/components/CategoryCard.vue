@@ -6,8 +6,8 @@ defineProps({
 
 <template>
   <button v-reveal type="button" class="cat-card reveal">
-    <ProductImage :image-key="category.image" :label="category.name" :glyph="category.emoji" />
-    <span class="cat-emoji">{{ category.emoji }}</span>
+    <ProductImage :image-key="category.image" :label="category.name" :icon="category.icon" />
+    <span class="cat-icon"><AppIcon :name="category.icon" /></span>
     <span class="cat-body">
       <h3>{{ category.name }}</h3>
       <p>{{ category.desc }}</p>
@@ -78,12 +78,12 @@ defineProps({
   }
 }
 
-.cat-emoji {
+.cat-icon {
   position: absolute;
   top: 14px;
   left: 14px;
-  font-size: 1.5rem;
   z-index: 3;
+  color: var(--blue-700);
   background: rgba(255, 255, 255, 0.92);
   width: 44px;
   height: 44px;
@@ -91,6 +91,11 @@ defineProps({
   display: grid;
   place-items: center;
   box-shadow: var(--sh-1);
+
+  svg {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 .cat-link {
@@ -111,10 +116,14 @@ defineProps({
 }
 
 @media (max-width: 640px) {
-  .cat-emoji {
+  .cat-icon {
     width: 38px;
     height: 38px;
-    font-size: 1.2rem;
+
+    svg {
+      width: 19px;
+      height: 19px;
+    }
   }
 }
 </style>

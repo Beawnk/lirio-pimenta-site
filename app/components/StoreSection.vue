@@ -15,7 +15,7 @@ const { waLink } = useWhatsApp()
 
       <div class="store-wrap">
         <div class="store-media">
-          <ProductImage image-key="fachada2" label="Fachada — Lírio Pimenta" glyph="🏪" />
+          <ProductImage image-key="fachada2" label="Fachada — Lírio Pimenta" icon="store" />
         </div>
 
         <div class="store-info">

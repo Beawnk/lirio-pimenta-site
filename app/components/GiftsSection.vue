@@ -25,7 +25,8 @@ const catalog = useCatalogStore()
               class="gift-chip"
               @click="catalog.selectCategory(chip.category)"
             >
-              {{ chip.emoji }} {{ chip.label }}
+              <AppIcon :name="chip.icon" class="chip-ic" />
+              {{ chip.label }}
             </button>
           </div>
 
@@ -36,7 +37,7 @@ const catalog = useCatalogStore()
         </div>
 
         <div class="gift-media">
-          <ProductImage image-key="presente" label="Presentes" glyph="🎁" tint />
+          <ProductImage image-key="presente" label="Presentes" icon="gift" tint />
         </div>
       </div>
     </div>
@@ -88,6 +89,12 @@ const catalog = useCatalogStore()
     background: var(--gold-100);
     transform: translateY(-2px);
   }
+}
+
+.chip-ic {
+  width: 17px;
+  height: 17px;
+  color: var(--blue-700);
 }
 
 .ver {

@@ -83,7 +83,7 @@ const actionHref = (action) => {
         :aria-hidden="index !== current"
         :inert="index !== current || undefined"
       >
-        <ProductImage :image-key="banner.image" :label="banner.title" glyph="🏪" />
+        <ProductImage :image-key="banner.image" :label="banner.title" icon="store" />
         <div class="overlay" />
 
         <div class="container inner">

@@ -23,7 +23,8 @@ const catalog = useCatalogStore()
           :class="{ active: catalog.filters.category === category.name }"
           @click="catalog.selectCategory(category.name)"
         >
-          {{ category.emoji }} {{ category.name }}
+          <AppIcon :name="category.icon" />
+          {{ category.name }}
         </button>
       </div>
     </div>
@@ -51,6 +52,9 @@ const catalog = useCatalogStore()
 
   button {
     flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
     color: #cfe4f2;
     font-family: var(--font-display);
     font-weight: 500;
@@ -59,6 +63,12 @@ const catalog = useCatalogStore()
     border-radius: var(--r-pill);
     transition: 0.18s;
     white-space: nowrap;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      opacity: 0.85;
+    }
 
     &:hover,
     &.active {

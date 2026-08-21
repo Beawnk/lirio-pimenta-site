@@ -4,14 +4,14 @@ import { INSTAGRAM } from '~/data/store-info'
 /* Grade de destaques: por enquanto são fotos da própria loja, não o feed real.
    Integrar o Instagram de verdade não está no escopo da Fase A. */
 const CELLS = [
-  { image: 'fachada', glyph: '🏪' },
-  { image: 'pilhas', glyph: '🔋' },
-  { image: 'tabacaria', glyph: '🚬' },
-  { image: 'presente', glyph: '🎁' },
-  { image: 'interior', glyph: '🛍️' },
-  { image: 'pessoas', glyph: '👋' },
-  { image: 'fachada2', glyph: '🏬' },
-  { image: 'interior2', glyph: '🧸' },
+  { image: 'fachada', icon: 'store' },
+  { image: 'pilhas', icon: 'battery' },
+  { image: 'tabacaria', icon: 'flame' },
+  { image: 'presente', icon: 'gift' },
+  { image: 'interior', icon: 'bag' },
+  { image: 'pessoas', icon: 'users' },
+  { image: 'fachada2', icon: 'store' },
+  { image: 'interior2', icon: 'blocks' },
 ]
 </script>
 
@@ -42,7 +42,7 @@ const CELLS = [
           rel="noopener"
           aria-label="Ver no Instagram"
         >
-          <ProductImage :image-key="cell.image" label="Destaque" :glyph="cell.glyph" />
+          <ProductImage :image-key="cell.image" label="Destaque" :icon="cell.icon" />
           <span class="ig-ov"><IconInstagram /></span>
         </a>
       </div>

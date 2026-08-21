@@ -3,7 +3,7 @@
     <div class="container">
       <div class="gift-wrap">
         <div class="gift-media">
-          <ProductImage image-key="interior" label="Interior da loja" glyph="🛍️" />
+          <ProductImage image-key="interior" label="Interior da loja" icon="bag" />
         </div>
         <div>
           <span class="eyebrow">Nossa história</span>

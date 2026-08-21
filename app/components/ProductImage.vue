@@ -22,7 +22,7 @@ const IMAGES = {
 const props = defineProps({
   imageKey: { type: String, default: '' },
   label: { type: String, default: 'Lírio Pimenta' },
-  glyph: { type: String, default: '📷' },
+  icon: { type: String, default: 'camera' },
   tint: { type: Boolean, default: false },
 })
 
@@ -33,7 +33,7 @@ const src = computed(() => IMAGES[props.imageKey] || '')
   <div class="ph" :class="{ svgph: !src, tint: !src && tint }">
     <img v-if="src" :src="src" :alt="`${label} — Lírio Pimenta`" loading="lazy" >
     <div v-else class="ph-inner">
-      <div class="ph-glyph">{{ glyph }}</div>
+      <AppIcon :name="icon" class="ph-glyph" />
       <div class="ph-label">{{ label }}</div>
       <div class="ph-note">Foto real da loja</div>
     </div>
@@ -90,9 +90,10 @@ const src = computed(() => IMAGES[props.imageKey] || '')
 }
 
 .ph-glyph {
-  font-size: 2rem;
+  width: 34px;
+  height: 34px;
   opacity: 0.9;
-  margin-bottom: 6px;
+  margin: 0 auto 8px;
 }
 
 .ph-label {
