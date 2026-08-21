@@ -17,12 +17,12 @@ function clear() {
   <aside class="drawer" :class="{ show: ui.isOpen('cart') }" aria-label="Carrinho">
     <div class="drawer-head">
       <h3>Seu carrinho</h3>
-      <button class="close-x" aria-label="Fechar" @click="ui.close()">✕</button>
+      <button class="close-x" aria-label="Fechar" @click="ui.close()"><IconX /></button>
     </div>
 
     <div class="drawer-body">
       <div v-if="cart.isEmpty" class="cart-empty">
-        <div class="big">🛒</div>
+        <IconCart class="big" />
         <h3>Seu carrinho está vazio</h3>
         <p>Explore o catálogo e adicione produtos.</p>
         <a href="#catalogo" class="btn btn-primary btn-sm" @click="ui.close()">Ver produtos</a>
@@ -104,7 +104,10 @@ function clear() {
   color: var(--ink-500);
 
   .big {
-    font-size: 2.6rem;
+    width: 46px;
+    height: 46px;
+    margin: 0 auto;
+    color: var(--ink-300);
   }
 
   p {

@@ -14,9 +14,9 @@
             que só uma loja de verdade proporciona.
           </p>
           <div class="gift-chips">
-            <span class="gift-chip">🏪 Loja física no Centro</span>
-            <span class="gift-chip">💬 Atendimento próximo</span>
-            <span class="gift-chip">🧭 Referência local</span>
+            <span class="gift-chip"><IconStore /> Loja física no Centro</span>
+            <span class="gift-chip"><IconChat /> Atendimento próximo</span>
+            <span class="gift-chip"><IconCompass /> Referência local</span>
           </div>
         </div>
       </div>
@@ -55,6 +55,13 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
+
+  svg {
+    width: 17px;
+    height: 17px;
+    color: var(--blue-700);
+  }
+
   padding: 11px 17px;
   border-radius: var(--r-pill);
   background: #fff;

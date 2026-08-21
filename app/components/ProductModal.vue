@@ -52,10 +52,10 @@ function addToCart() {
           </div>
 
           <div class="pd-info">
-            <button class="close-x pd-close" aria-label="Fechar" @click="ui.close()">✕</button>
+            <button class="close-x pd-close" aria-label="Fechar" @click="ui.close()"><IconX /></button>
 
             <span class="card-cat">
-              {{ product.category }}<template v-if="product.isNew"> · ✦ Novidade</template>
+              {{ product.category }}<template v-if="product.isNew"> · <IconSparkle class="ic-new" /> Novidade</template>
             </span>
             <h2>{{ product.name }}</h2>
             <p class="pd-desc">{{ product.desc }}</p>
@@ -84,9 +84,9 @@ function addToCart() {
               <div v-if="product.available" class="pd-qtyrow">
                 <span>Quantidade</span>
                 <div class="qty">
-                  <button aria-label="Diminuir" @click="qty = Math.max(1, qty - 1)">−</button>
+                  <button aria-label="Diminuir" @click="qty = Math.max(1, qty - 1)"><IconMinus /></button>
                   <span>{{ qty }}</span>
-                  <button aria-label="Aumentar" @click="qty = qty + 1">+</button>
+                  <button aria-label="Aumentar" @click="qty = qty + 1"><IconPlus /></button>
                 </div>
               </div>
               <button
@@ -205,6 +205,12 @@ function addToCart() {
   color: var(--blue-700);
   font-weight: 600;
   font-family: var(--font-display);
+
+  .ic-new {
+    width: 11px;
+    height: 11px;
+    vertical-align: -1px;
+  }
 }
 
 .pd-desc {
@@ -291,7 +297,12 @@ function addToCart() {
     display: grid;
     place-items: center;
     color: var(--ink-700);
-    font-size: 1.1rem;
+
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+
     font-weight: 600;
 
     &:hover {

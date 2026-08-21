@@ -126,7 +126,8 @@ const actionHref = (action) => {
             class="hero-ig"
           >
             <IconInstagram class="ic" />
-            Ver novidades no Instagram →
+            Ver novidades no Instagram
+            <IconArrowRight class="ic" />
           </a>
         </div>
       </article>
@@ -142,7 +143,7 @@ const actionHref = (action) => {
          bolinha de "aberto agora" do horário, e os 8px dela esmagavam o
          chip inteiro. -->
     <div class="controls">
-      <button class="arrow prev" aria-label="Destaque anterior" @click="prev()">‹</button>
+      <button class="arrow prev" aria-label="Destaque anterior" @click="prev()"><IconChevronLeft /></button>
 
       <div class="slide-tabs">
         <button
@@ -158,7 +159,7 @@ const actionHref = (action) => {
         </button>
       </div>
 
-      <button class="arrow next" aria-label="Próximo destaque" @click="next()">›</button>
+      <button class="arrow next" aria-label="Próximo destaque" @click="next()"><IconChevronRight /></button>
     </div>
   </section>
 </template>
@@ -306,8 +307,11 @@ h2 {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.9);
   color: var(--ink-900);
-  font-size: 1.8rem;
-  line-height: 1;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
   display: grid;
   place-items: center;
   box-shadow: var(--sh-2);
@@ -355,7 +359,11 @@ h2 {
   .arrow {
     width: 40px;
     height: 40px;
-    font-size: 1.5rem;
+
+    svg {
+      width: 17px;
+      height: 17px;
+    }
   }
 }
 

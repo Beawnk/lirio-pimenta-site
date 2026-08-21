@@ -8,6 +8,11 @@
   letter-spacing: 0.03em;
   padding: 5px 11px;
   border-radius: var(--r-pill);
+
+  svg {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 .badge-new {

@@ -27,12 +27,12 @@ const icon = findCategory(props.line.product.category)?.icon || 'package'
       </div>
 
       <div class="qty">
-        <button aria-label="Diminuir" @click="cart.setQty(line.id, line.qty - 1)">−</button>
+        <button aria-label="Diminuir" @click="cart.setQty(line.id, line.qty - 1)"><IconMinus /></button>
         <span>{{ line.qty }}</span>
-        <button aria-label="Aumentar" @click="cart.setQty(line.id, line.qty + 1)">+</button>
+        <button aria-label="Aumentar" @click="cart.setQty(line.id, line.qty + 1)"><IconPlus /></button>
       </div>
 
-      <button class="ci-remove" @click="cart.remove(line.id)">✕ Remover</button>
+      <button class="ci-remove" @click="cart.remove(line.id)"><IconX /> Remover</button>
     </div>
   </div>
 </template>
@@ -85,7 +85,12 @@ const icon = findCategory(props.line.product.category)?.icon || 'package'
     display: grid;
     place-items: center;
     color: var(--ink-700);
-    font-size: 1.1rem;
+
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+
     font-weight: 600;
 
     &:hover {
@@ -109,6 +114,11 @@ const icon = findCategory(props.line.product.category)?.icon || 'package'
   display: inline-flex;
   align-items: center;
   gap: 4px;
+
+  svg {
+    width: 12px;
+    height: 12px;
+  }
 
   &:hover {
     color: var(--red-500);

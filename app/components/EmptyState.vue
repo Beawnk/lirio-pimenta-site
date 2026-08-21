@@ -2,7 +2,7 @@
 import { useWhatsApp } from '~/composables/useWhatsApp'
 
 defineProps({
-  glyph: { type: String, default: '🔍' },
+  icon: { type: String, default: 'search' },
   title: { type: String, default: 'Nada encontrado' },
   message: { type: String, default: 'Tente outra busca ou fale com a gente pelo WhatsApp.' },
 })
@@ -12,7 +12,7 @@ const { greetingLink } = useWhatsApp()
 
 <template>
   <div class="empty">
-    <div class="big">{{ glyph }}</div>
+    <AppIcon :name="icon" class="big" />
     <h3>{{ title }}</h3>
     <p>{{ message }}</p>
     <a :href="greetingLink()" target="_blank" rel="noopener" class="btn btn-wa btn-sm">
@@ -29,8 +29,10 @@ const { greetingLink } = useWhatsApp()
   color: var(--ink-500);
 
   .big {
-    font-size: 2.4rem;
-    margin-bottom: 10px;
+    width: 42px;
+    height: 42px;
+    margin: 0 auto 10px;
+    color: var(--ink-300);
   }
 
   .btn {

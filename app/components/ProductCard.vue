@@ -32,7 +32,7 @@ function addToCart() {
       <ProductImage :image-key="product.image" :label="product.category" :icon="icon" />
 
       <div class="card-badges">
-        <span v-if="product.isNew" class="badge badge-new">✦ Novidade</span>
+        <span v-if="product.isNew" class="badge badge-new"><IconSparkle /> Novidade</span>
         <span v-if="!product.available" class="badge badge-soft">Sob consulta</span>
       </div>
 

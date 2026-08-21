@@ -23,7 +23,7 @@ const LINKS = [
         <span class="brand-mark"><img src="/img/logo.png" alt="Lírio Pimenta" ></span>
         <b>Lírio Pimenta</b>
       </a>
-      <button class="close-x" aria-label="Fechar" @click="ui.close()">✕</button>
+      <button class="close-x" aria-label="Fechar" @click="ui.close()"><IconX /></button>
     </div>
 
     <a v-for="link in LINKS" :key="link.href" :href="link.href" @click="ui.close()">

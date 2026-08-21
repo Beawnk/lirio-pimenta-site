@@ -42,7 +42,7 @@ function send() {
       <div class="steps">
         <template v-for="(label, i) in STEPS" :key="label">
           <div class="step" :class="{ active: step === i + 1, done: step > i + 1 }">
-            <span class="n">{{ step > i + 1 ? '✓' : i + 1 }}</span>
+            <span class="n"><IconCheck v-if="step > i + 1" /><template v-else>{{ i + 1 }}</template></span>
             {{ label }}
           </div>
           <span v-if="i < STEPS.length - 1" class="step-line" />
@@ -183,6 +183,11 @@ function send() {
     font-weight: 700;
     font-size: 0.8rem;
     transition: 0.2s;
+
+    svg {
+      width: 14px;
+      height: 14px;
+    }
   }
 
   &.active {

@@ -9,6 +9,7 @@ import IconBattery from './IconBattery.vue'
 import IconBlocks from './IconBlocks.vue'
 import IconBook from './IconBook.vue'
 import IconCamera from './IconCamera.vue'
+import IconCart from './IconCart.vue'
 import IconFlame from './IconFlame.vue'
 import IconFlower from './IconFlower.vue'
 import IconGem from './IconGem.vue'
@@ -17,6 +18,7 @@ import IconHandshake from './IconHandshake.vue'
 import IconHome from './IconHome.vue'
 import IconPackage from './IconPackage.vue'
 import IconParty from './IconParty.vue'
+import IconSearch from './IconSearch.vue'
 import IconShirt from './IconShirt.vue'
 import IconStore from './IconStore.vue'
 import IconTag from './IconTag.vue'
@@ -38,6 +40,7 @@ const ICONS = {
   blocks: IconBlocks,
   book: IconBook,
   camera: IconCamera,
+  cart: IconCart,
   flame: IconFlame,
   flower: IconFlower,
   gem: IconGem,
@@ -46,6 +49,7 @@ const ICONS = {
   home: IconHome,
   package: IconPackage,
   party: IconParty,
+  search: IconSearch,
   shirt: IconShirt,
   store: IconStore,
   tag: IconTag,

@@ -8,7 +8,7 @@ const ui = useUiStore()
   <aside class="drawer" :class="{ show: ui.isOpen('filters') }" aria-label="Filtros">
     <div class="drawer-head">
       <h3>Filtros</h3>
-      <button class="close-x" aria-label="Fechar" @click="ui.close()">✕</button>
+      <button class="close-x" aria-label="Fechar" @click="ui.close()"><IconX /></button>
     </div>
     <div class="drawer-body">
       <CatalogFilters bare />

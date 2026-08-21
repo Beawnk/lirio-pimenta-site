@@ -17,7 +17,7 @@ export const BANNERS = [
     id: 'loja',
     label: 'A loja',
     image: 'fachada',
-    eyebrow: '✦ Mais de 40 anos ao lado de Viamão',
+    eyebrow: 'Mais de 40 anos ao lado de Viamão',
     title: 'Há mais de 40 anos ao lado de Viamão.',
     text: 'Uma loja de variedades, presentes e descobertas para todos os momentos. Tudo que você procura, em um só lugar.',
     instagram: true,
