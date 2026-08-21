@@ -213,12 +213,20 @@ const actionHref = (action) => {
   position: absolute;
   inset: 0;
   z-index: 2;
-  background: linear-gradient(
-    180deg,
-    rgba(10, 60, 92, 0.28) 0%,
-    rgba(10, 60, 92, 0.12) 40%,
-    rgba(8, 30, 46, 0.82) 100%
-  );
+  /* Duas camadas: um tom azul da marca sobre a foto inteira, e por cima um
+     scrim escuro que nasce no fim do texto e escurece até a base — cobre
+     toda a faixa onde há título/legenda, em vez de afinar bem onde o h1
+     começa (o problema anterior). O alfa mínimo do scrim é ~0.55: abaixo
+     disso, texto branco sobre o pixel mais claro possível da foto não bate
+     4.5:1 de contraste. */
+  background:
+    linear-gradient(180deg, rgba(10, 60, 92, 0.32) 0%, rgba(10, 60, 92, 0.18) 100%),
+    linear-gradient(
+      to top,
+      rgba(6, 22, 34, 0.86) 0%,
+      rgba(6, 22, 34, 0.6) 45%,
+      rgba(6, 22, 34, 0) 100%
+    );
 }
 
 .inner {

@@ -36,6 +36,15 @@ export const useCatalogStore = defineStore('catalog', () => {
     }
   }
 
+  function focusSearch() {
+    if (!import.meta.client) return
+
+    // Foco antes da rolagem: no celular o teclado abre e redimensiona a
+    // viewport, o que atrapalharia uma rolagem suave já em andamento.
+    document.getElementById('busca')?.focus({ preventScroll: true })
+    document.getElementById('catalogo')?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   function clearFilters() {
     Object.assign(filters, createFilters(), { sort: filters.sort })
   }
@@ -52,6 +61,7 @@ export const useCatalogStore = defineStore('catalog', () => {
     resultLabel,
     selectedProduct,
     selectCategory,
+    focusSearch,
     clearFilters,
     openProduct,
   }

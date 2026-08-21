@@ -1,11 +1,13 @@
 <script setup>
 import { onMounted, onUnmounted, ref } from 'vue'
 import { useCartStore } from '~/stores/cart'
+import { useCatalogStore } from '~/stores/catalog'
 import { useUiStore } from '~/stores/ui'
 import { useWhatsApp } from '~/composables/useWhatsApp'
 
 const ui = useUiStore()
 const cart = useCartStore()
+const catalog = useCatalogStore()
 const { waLink } = useWhatsApp()
 
 const scrolled = ref(false)
@@ -44,9 +46,14 @@ const NAV = [
       </nav>
 
       <div class="header-actions">
-        <a href="#catalogo" class="icon-btn search-btn" aria-label="Buscar produtos">
+        <button
+          type="button"
+          class="icon-btn search-btn"
+          aria-label="Buscar produtos"
+          @click="catalog.focusSearch()"
+        >
           <IconSearch />
-        </a>
+        </button>
         <a
           :href="waLink()"
           target="_blank"
@@ -216,6 +223,12 @@ const NAV = [
 
   .hamburger {
     display: grid;
+  }
+
+  /* Sem o .nav para empurrar com margin-left: auto, as ações ficavam
+     grudadas na marca em vez de na borda — aqui é quem assume o trabalho. */
+  .header-actions {
+    margin-left: auto;
   }
 }
 

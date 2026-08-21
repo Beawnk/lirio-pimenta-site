@@ -1,10 +1,19 @@
 <script setup>
 import { INSTAGRAM } from '~/data/store-info'
+import { useCatalogStore } from '~/stores/catalog'
 import { useUiStore } from '~/stores/ui'
 import { useWhatsApp } from '~/composables/useWhatsApp'
 
 const ui = useUiStore()
+const catalog = useCatalogStore()
 const { waLink } = useWhatsApp()
+
+/* No celular a busca do header some (some ícone a menos por barra); o
+   caminho até ela passa a ser este menu. Fecha, rola e já foca o campo. */
+function searchAndClose() {
+  ui.close()
+  catalog.focusSearch()
+}
 
 const LINKS = [
   { href: '#categorias', label: 'Categorias' },
@@ -25,6 +34,11 @@ const LINKS = [
       </a>
       <button class="close-x" aria-label="Fechar" @click="ui.close()"><IconX /></button>
     </div>
+
+    <button type="button" class="search-item" @click="searchAndClose()">
+      <IconSearch />
+      Buscar no catálogo
+    </button>
 
     <a v-for="link in LINKS" :key="link.href" :href="link.href" @click="ui.close()">
       {{ link.label }}
@@ -53,7 +67,8 @@ const LINKS = [
     transform: translateX(0);
   }
 
-  > a {
+  > a,
+  > .search-item {
     padding: 15px 22px;
     border-bottom: 1px solid var(--line);
     font-family: var(--font-display);
@@ -66,6 +81,27 @@ const LINKS = [
     &:hover {
       background: var(--bg-soft);
       color: var(--blue-700);
+    }
+  }
+
+  .search-item {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+
+    svg {
+      width: 19px;
+      height: 19px;
+      color: var(--ink-500);
+      /* A caixa do ícone já fica centralizada com a do texto, mas o texto
+         reserva espaço para acento/descendente abaixo da linha de base —
+         isso puxa o centro óptico do texto ~1px para baixo do centro do
+         ícone. Sem o nudge, o ícone lê como "mais alto" que a palavra. */
+      position: relative;
+      top: -1px;
     }
   }
 

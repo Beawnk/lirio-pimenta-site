@@ -56,7 +56,7 @@ function addToCart() {
 
       <div class="card-foot">
         <!-- Preço nunca aparece: quem decide o valor é a conversa no WhatsApp -->
-        <span class="price-consult">Consultar preço</span>
+        <span class="price-consult">Preço a consultar</span>
         <button
           v-if="product.available"
           class="add-btn"

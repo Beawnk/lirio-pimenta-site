@@ -12,6 +12,12 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'theme-color', content: '#0f5c8c' },
+        /* Domínio temporário do Cloudflare Pages (workers.dev) — se ficar
+           indexado, vira uma URL órfã competindo com o .com.br depois.
+           REMOVER quando o domínio final subir (ver SITE_URL em
+           app/data/store-info.js e a dívida "Virada de domínio" no
+           TASKS.md / CLAUDE.md do projeto). */
+        { name: 'robots', content: 'noindex, nofollow' },
         {
           name: 'description',
           content:

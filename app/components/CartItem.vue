@@ -23,7 +23,7 @@ const icon = findCategory(props.line.product.category)?.icon || 'package'
     <div class="ci-info">
       <div class="ci-name">{{ line.product.name }}</div>
       <div class="ci-price">
-        {{ line.product.available ? 'Consultar preço' : 'Sob consulta na loja' }}
+        {{ line.product.available ? 'Preço a consultar' : 'Sob consulta na loja' }}
       </div>
 
       <div class="qty">

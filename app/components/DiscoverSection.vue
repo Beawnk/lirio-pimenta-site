@@ -71,7 +71,12 @@ const WORDS = [
 }
 
 .rotator {
-  height: 1.4em;
+  /* O translateY de cada item desloca por 100% da ALTURA DO SPAN — então o
+     span precisa medir exatamente o que o container mede. Sem essa mesma
+     variável nos dois, a folga entre o line-height herdado do h2 e a altura
+     do container deixava sobrar um pedaço do próximo item em cada troca. */
+  --rot-h: 1.35em;
+  height: var(--rot-h);
   overflow: hidden;
   display: inline-block;
   vertical-align: bottom;
@@ -80,6 +85,8 @@ const WORDS = [
 
   span {
     display: block;
+    height: var(--rot-h);
+    line-height: var(--rot-h);
     color: var(--gold-500);
     font-weight: 800;
     animation: roll 9s infinite;

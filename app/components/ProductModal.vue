@@ -78,7 +78,7 @@ function addToCart() {
               </div>
             </div>
 
-            <div class="pd-price">Consultar preço</div>
+            <div class="pd-price">Preço a consultar</div>
             <small>Confirme o valor na loja ou pelo WhatsApp.</small>
 
             <div class="pd-actions">

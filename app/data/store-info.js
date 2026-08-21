@@ -12,6 +12,13 @@ export const INSTAGRAM_HANDLE = '@lojaliriopimenta'
 /* URL oficial ainda não confirmada com o Lírio — enquanto vazia, o link fica inativo. */
 export const FACEBOOK_URL = ''
 
+/* Domínio final ainda não existe — o site está publicado num subdomínio
+   temporário do Cloudflare Pages (workers.dev), marcado noindex para não
+   competir com o .com.br depois. Enquanto SITE_URL estiver vazia, canonical
+   e o "url" do JSON-LD ficam de fora — não emita URL para um endereço que
+   vai mudar. Ver a dívida "Virada de domínio" no TASKS.md e no CLAUDE.md. */
+export const SITE_URL = ''
+
 export const ADDRESS = {
   street: 'Rua Ramiro Barcelos, 84',
   district: 'Centro',

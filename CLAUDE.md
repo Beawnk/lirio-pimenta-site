@@ -89,6 +89,14 @@ entrar no store depois de `app:suspense:resolve` (veja `app/plugins/cart.client.
 Antes disso a hidratação ainda não terminou, e o Vue não corrige diferença de `class`
 entre servidor e cliente — o elemento fica com a classe errada para sempre.
 
+**O site está de propósito fora de busca até a virada de domínio.** Hoje só existe o
+domínio temporário do Cloudflare Pages (`workers.dev`); indexado, ele vira uma URL órfã
+competindo com o `.com.br` depois. Três lugares seguram isso: `meta robots noindex` em
+`nuxt.config.ts`, `Disallow: /` em `public/robots.txt`, e `SITE_URL = ''` em
+`app/data/store-info.js` (mantém o canonical e o `url` do JSON-LD desligados). **Quando o
+domínio final subir:** tirar o noindex, liberar o `robots.txt` e preencher `SITE_URL` —
+ver a tarefa "Virada de domínio" em `gestao/TASKS.md`.
+
 ```
 app/
 ├── components/     # PascalCase.vue
