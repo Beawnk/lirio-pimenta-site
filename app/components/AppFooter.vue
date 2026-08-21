@@ -52,7 +52,7 @@ const year = computed(() => new Date().getFullYear())
           <ul>
             <li>{{ ADDRESS.street }}</li>
             <li>{{ ADDRESS.district }} — {{ ADDRESS.city }}/{{ ADDRESS.state }}</li>
-            <li><a :href="MAPS_URL" target="_blank" rel="noopener">Ver no mapa <IconArrowRight /></a></li>
+            <li><a :href="MAPS_URL" target="_blank" rel="noopener" class="map-link">Ver no mapa <IconArrowRight /></a></li>
           </ul>
         </div>
 
@@ -102,15 +102,18 @@ const year = computed(() => new Date().getFullYear())
     color: #c3ced6;
     transition: 0.16s;
 
-    svg {
-      width: 13px;
-      height: 13px;
-      vertical-align: -2px;
-    }
-
     &:hover {
       color: var(--gold-500);
     }
+  }
+
+  /* Só a seta do "Ver no mapa". Uma regra `.footer a svg` daria conta dela,
+     mas venceria `.social svg` por especificidade (dois elementos contra um)
+     e encolheria os botões de Instagram e WhatsApp junto. */
+  .map-link svg {
+    width: 13px;
+    height: 13px;
+    vertical-align: -2px;
   }
 
   p {
