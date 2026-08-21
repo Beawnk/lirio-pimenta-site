@@ -96,10 +96,18 @@ watch(
 }
 
 .select {
-  padding: 12px 16px;
+  /* appearance: none tira a seta nativa do navegador, que ignora padding e
+     fica sempre colada na borda. A de baixo é desenhada à mão (mesmo
+     traço dos outros ícones de seta do projeto) e ganha os mesmos 16px de
+     respiro que o texto tem do outro lado. */
+  appearance: none;
+  padding: 12px 40px 12px 16px;
   border: 1.6px solid var(--line);
   border-radius: var(--r-pill);
-  background: #fff;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23566470' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E")
+    no-repeat right 16px center / 14px;
+  background-color: #fff;
   font-family: var(--font-text);
   font-size: 0.9rem;
   color: var(--ink-700);
