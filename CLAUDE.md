@@ -97,6 +97,17 @@ competindo com o `.com.br` depois. Três lugares seguram isso: `meta robots noin
 domínio final subir:** tirar o noindex, liberar o `robots.txt` e preencher `SITE_URL` —
 ver a tarefa "Virada de domínio" em `gestao/TASKS.md`.
 
+**JSON-LD LocalBusiness já está no ar** (`app/composables/useLocalBusiness.js`, injetado em
+`app/pages/index.vue`), seguindo o mesmo padrão de função pura dos outros composables. Fica
+de fora de propósito o campo `geo` (coordenadas) — não temos lat/long reais e não é para
+inventar; entra junto do Google Business, que está no Someday do `gestao/TASKS.md`.
+
+**A busca não tem ícone no header mobile.** Decisão deliberada para não espremer um quarto
+ícone ali (WhatsApp, carrinho, hambúrguer já ocupam a faixa); o caminho é o menu
+hambúrguer → "Buscar no catálogo", que fecha o menu, rola até `#catalogo` e foca o campo via
+`catalog.focusSearch()` (`app/stores/catalog.js`). Não reintroduza o ícone no header sem
+resolver esse aperto de espaço primeiro.
+
 ```
 app/
 ├── components/     # PascalCase.vue
@@ -172,6 +183,13 @@ e **sem width/height** — quem consome dimensiona pelo CSS. Os desenhos vêm do
 Quando o ícone é fixo no template, use `<IconGift />` direto; quando vem de dado, o dado
 guarda uma chave de texto (`icon: 'gift'`) e `<AppIcon :name="..." />` resolve — assim
 `app/data/` continua sem conhecer Vue.
+
+**Exceção deliberada: a seta do `<select>` nativo** (`app/components/CatalogToolbar.vue`,
+`.select`) não é um `Icon*.vue` — é SVG embutido em `background-image` via `appearance: none`,
+porque um `<select>` não hospeda componente Vue dentro da própria caixa. A cor vem *hardcoded*
+em hex (`%23566470`, o valor de `--ink-500`) porque `currentColor` não funciona dentro de um
+`data:` URI de `background-image`. Se `--ink-500` mudar no `_tokens.scss`, atualize essa seta
+manualmente.
 
 ---
 
