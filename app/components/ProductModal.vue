@@ -131,7 +131,7 @@ function addToCart() {
   padding: 20px;
   opacity: 0;
   visibility: hidden;
-  transition: 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
 
   &.show {
     opacity: 1;
@@ -153,7 +153,7 @@ function addToCart() {
   flex-direction: column;
   box-shadow: var(--sh-3);
   transform: translateY(16px) scale(0.98);
-  transition: 0.32s var(--ease);
+  transition: transform 0.32s var(--ease);
 }
 
 .modal-scroll {

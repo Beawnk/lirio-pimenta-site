@@ -341,8 +341,7 @@ h2 {
   border: 1.5px solid rgba(255, 255, 255, 0.35);
   padding: 7px 14px;
   border-radius: var(--r-pill);
-  backdrop-filter: blur(6px);
-  transition: 0.2s var(--ease);
+  transition: background-color 0.2s var(--ease), border-color 0.2s var(--ease);
 
   &:hover {
     border-color: var(--gold-500);

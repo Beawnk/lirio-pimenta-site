@@ -73,15 +73,18 @@ const NAV = [
   position: sticky;
   top: 0;
   z-index: 60;
-  background: rgba(255, 255, 255, 0.86);
-  backdrop-filter: saturate(1.4) blur(14px);
+  /* Sem backdrop-filter de propósito. O header é sticky, então desfocar o
+     que passa atrás dele obrigava o navegador a reborrar a faixa inteira a
+     cada frame de scroll — era a conta mais cara da página.
+     O fundo passa a ser opaco: sem o desfoque, um branco translúcido deixa
+     o texto do header competindo com a foto que passa por baixo. */
+  background: var(--white);
   border-bottom: 1px solid transparent;
-  transition: 0.3s var(--ease);
+  transition: box-shadow 0.3s var(--ease), border-color 0.3s var(--ease);
 
   &.scrolled {
     box-shadow: var(--sh-2);
     border-bottom-color: var(--line);
-    background: rgba(255, 255, 255, 0.96);
   }
 }
 

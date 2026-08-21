@@ -23,7 +23,7 @@ defineProps({
   overflow: hidden;
   aspect-ratio: 1 / 1.08;
   box-shadow: var(--sh-1);
-  transition: 0.3s var(--ease);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
   cursor: pointer;
   display: block;
   width: 100%;

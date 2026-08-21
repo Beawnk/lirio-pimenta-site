@@ -31,7 +31,7 @@ const { greetingLink } = useWhatsApp()
   border-radius: var(--r-pill);
   box-shadow: 0 10px 30px rgba(11, 138, 61, 0.42);
   padding: 14px;
-  transition: 0.28s var(--ease);
+  transition: padding-right 0.28s var(--ease);
   overflow: hidden;
 
   svg {
@@ -67,7 +67,7 @@ const { greetingLink } = useWhatsApp()
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 0.92rem;
-  transition: 0.3s var(--ease);
+  transition: max-width 0.3s var(--ease), opacity 0.3s var(--ease);
 }
 
 @media (max-width: 640px) {

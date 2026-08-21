@@ -2,7 +2,7 @@
 .reveal {
   opacity: 0;
   transform: translateY(24px);
-  transition: 0.7s var(--ease);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
 
   &.in {
     opacity: 1;

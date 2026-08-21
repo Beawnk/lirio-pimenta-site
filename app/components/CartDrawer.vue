@@ -65,7 +65,7 @@ function clear() {
   display: flex;
   flex-direction: column;
   transform: translateX(100%);
-  transition: 0.36s var(--ease);
+  transition: transform 0.36s var(--ease);
   box-shadow: var(--sh-3);
 
   &.show {

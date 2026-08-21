@@ -44,7 +44,7 @@ const LINKS = [
   background: #fff;
   z-index: 90;
   transform: translateX(-100%);
-  transition: 0.34s var(--ease);
+  transition: transform 0.34s var(--ease);
   box-shadow: var(--sh-3);
   display: flex;
   flex-direction: column;

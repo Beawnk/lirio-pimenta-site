@@ -89,7 +89,7 @@ function addToCart() {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: 0.26s var(--ease);
+  transition: transform 0.26s var(--ease), box-shadow 0.26s var(--ease);
   position: relative;
 
   &:hover {
