@@ -79,6 +79,9 @@ const year = computed(() => new Date().getFullYear())
 
       <div class="footer-bottom">
         <span>© {{ year }} Lírio Pimenta — Viamão/RS. Todos os direitos reservados.</span>
+        <a href="https://biancasineleck.vercel.app/" target="_blank" rel="noopener" class="credit">
+          Desenvolvido por Bianca Sineleck
+        </a>
       </div>
     </div>
   </footer>

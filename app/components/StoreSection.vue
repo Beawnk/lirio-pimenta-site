@@ -156,6 +156,12 @@ const { waLink } = useWhatsApp()
 
   .store-media {
     min-height: 260px;
+
+    /* Corte padrão (centro) mostra parede e pouco da fachada de verdade;
+       aqui desce o enquadramento pra pegar a placa inteira e a vitrine. */
+    :deep(.ph img) {
+      object-position: center 80%;
+    }
   }
 }
 </style>

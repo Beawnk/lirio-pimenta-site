@@ -14,7 +14,8 @@ const IMAGES = {
   interior2: '/img/interior2.jfif',
   pilhas: '/img/pilhas.webp',
   tabacaria: '/img/tabacaria.webp',
-  presente: '/img/presente.webp',
+  presente: '/img/presentes2.jpg',
+  agua: '/img/agua.jfif',
   pessoas: '/img/pessoas.webp',
   logo: '/img/logo.png',
 }

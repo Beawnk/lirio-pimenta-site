@@ -388,6 +388,12 @@ h2 {
     min-height: 84vh;
   }
 
+  /* Só o slide da loja (sempre o primeiro, ver banners.js) — os outros usam
+     fotos de interior/produto onde o enquadramento padrão já funciona. */
+  .slide:first-child :deep(.ph img) {
+    object-position: 62% 12%;
+  }
+
   .inner {
     padding-bottom: calc(var(--sp-8) + 58px);
   }

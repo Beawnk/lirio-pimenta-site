@@ -96,4 +96,20 @@ export const BANNERS = [
       },
     ],
   },
+  {
+    id: 'agua',
+    label: 'Água',
+    image: 'agua',
+    eyebrow: 'Direto na loja',
+    title: 'Água mineral e galão.',
+    text: 'Garrafões e água mineral, prontos para levar embora. Sem precisar rodar a cidade.',
+    actions: [
+      {
+        kind: 'whatsapp',
+        label: 'Perguntar disponibilidade',
+        message: 'Olá! Vocês têm água mineral ou galão disponível agora?',
+        style: 'gold',
+      },
+    ],
+  },
 ]
