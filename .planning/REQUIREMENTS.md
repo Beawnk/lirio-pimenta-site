@@ -115,17 +115,58 @@ Excluído explicitamente, com o motivo, para não voltar por engano.
 
 ## Traceability
 
-Preenchido durante a criação do roadmap.
-
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| (a preencher) | | |
+| AUTH-01 | Phase 1 | Pending |
+| AUTH-02 | Phase 1 | Pending |
+| AUTH-03 | Phase 1 | Pending |
+| AUTH-04 | Phase 1 | Pending |
+| CAT-01 | Phase 1 | Pending |
+| CAT-02 | Phase 1 | Pending |
+| DATA-02 | Phase 1 | Pending |
+| DATA-03 | Phase 1 | Pending |
+| DATA-04 | Phase 1 | Pending |
+| IMG-01 | Phase 1 | Pending |
+| IMG-02 | Phase 1 | Pending |
+| IMG-03 | Phase 1 | Pending |
+| IMG-05 | Phase 1 | Pending |
+| CAT-03 | Phase 2 | Pending |
+| CAT-04 | Phase 2 | Pending |
+| CAT-05 | Phase 2 | Pending |
+| CAT-06 | Phase 2 | Pending |
+| CAT-07 | Phase 2 | Pending |
+| PROD-01 | Phase 3 | Pending |
+| PROD-02 | Phase 3 | Pending |
+| PROD-09 | Phase 3 | Pending |
+| PROD-10 | Phase 3 | Pending |
+| IMG-04 | Phase 3 | Pending |
+| PROD-03 | Phase 4 | Pending |
+| PROD-04 | Phase 4 | Pending |
+| PROD-05 | Phase 4 | Pending |
+| PROD-06 | Phase 4 | Pending |
+| PROD-07 | Phase 4 | Pending |
+| PROD-08 | Phase 4 | Pending |
+| BAN-01 | Phase 5 | Pending |
+| BAN-02 | Phase 5 | Pending |
+| BAN-03 | Phase 5 | Pending |
+| BAN-04 | Phase 5 | Pending |
+| BAN-05 | Phase 5 | Pending |
+| BAN-06 | Phase 5 | Pending |
+| BAN-07 | Phase 5 | Pending |
+| DATA-01 | Phase 5 | Pending |
+| PUB-01 | Phase 6 | Pending |
+| PUB-02 | Phase 6 | Pending |
+| PUB-03 | Phase 6 | Pending |
+| PUB-04 | Phase 6 | Pending |
+| PUB-05 | Phase 6 | Pending |
+| PUB-06 | Phase 6 | Pending |
+| DATA-05 | Phase 6 | Pending |
 
 **Coverage:**
 - v1 requirements: 44 total
-- Mapped to phases: 0
-- Unmapped: 44 ⚠️
+- Mapped to phases: 44
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-08-29*
-*Last updated: 2026-08-29 after initial definition*
+*Last updated: 2026-09-04 after roadmap creation*
