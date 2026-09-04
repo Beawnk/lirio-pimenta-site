@@ -36,7 +36,7 @@ precisar de um dev a cada alteração.
 - [ ] CRUD de produto no painel, gravando em Postgres via Supabase
 - [ ] Upload de imagem de produto comprimida/redimensionada no navegador antes de ir pro Storage
 - [ ] Produto "indisponível" é arquivado (some do catálogo público), nunca deletado
-- [ ] CRUD completo de categorias pelo painel (criar, editar, reordenar, remover)
+- [ ] CRUD completo de categorias pelo painel (criar, editar, reordenar, remover), incluindo arquivar categoria junto com todos os seus produtos (com aviso e desfazer)
 - [ ] Catálogo público (busca, filtros, categorias) passa a ler do Supabase em vez de `app/data/`
 
 ### Out of Scope
@@ -45,7 +45,7 @@ precisar de um dev a cada alteração.
 - Múltiplas contas ou permissões no painel — só o Lírio administra, por enquanto
 - Checkout, pagamento ou cálculo de frete — não é e-commerce; negociação continua no WhatsApp
 - Controle de quantidade em estoque — não existe no modelo de negócio; produto indisponível é arquivado, não zerado
-- Importação por planilha e carga dos ~500 produtos reais — isso é Fase C
+- Importação por planilha e carga dos ~500 produtos reais — reconhecida como v2 (`IMPORT-01` em REQUIREMENTS.md), fora do roadmap desta fase
 
 ## Context
 
@@ -81,6 +81,7 @@ precisar de um dev a cada alteração.
 | Painel é de conta única (só o Lírio) | Só ele administra a loja; sem necessidade de multi-usuário agora | — Pending |
 | Catálogo público migra pro Supabase junto com o painel, não em fase separada | Evita manter duas fontes de verdade (estático + banco) ao mesmo tempo | — Pending |
 | Categorias ganham CRUD completo no painel | Lírio quer poder ajustar categorias sem precisar de um dev | — Pending |
+| Categoria com produtos não arquivados não pode ser apagada; em vez disso, existe "arquivar categoria + todos os produtos dela", com aviso explícito antes e desfazer depois | Apagar em cascata destrói dado que o Lírio pode querer de volta; bloquear sem alternativa deixa ele travado. Arquivar em massa resolve os dois, e o desfazer tira o medo de clicar | — Pending |
 
 ## Evolution
 
