@@ -95,12 +95,12 @@ competindo com o `.com.br` depois. Três lugares seguram isso: `meta robots noin
 `nuxt.config.ts`, `Disallow: /` em `public/robots.txt`, e `SITE_URL = ''` em
 `app/data/store-info.js` (mantém o canonical e o `url` do JSON-LD desligados). **Quando o
 domínio final subir:** tirar o noindex, liberar o `robots.txt` e preencher `SITE_URL` —
-ver a tarefa "Virada de domínio" em `gestao/TASKS.md`.
+ver a tarefa "Virada de domínio" em `Work/Tasks/Lirio Site tasks.md` (vault Obsidian).
 
 **JSON-LD LocalBusiness já está no ar** (`app/composables/useLocalBusiness.js`, injetado em
 `app/pages/index.vue`), seguindo o mesmo padrão de função pura dos outros composables. Fica
 de fora de propósito o campo `geo` (coordenadas) — não temos lat/long reais e não é para
-inventar; entra junto do Google Business, que está no Someday do `gestao/TASKS.md`.
+inventar; entra junto do Google Business, que está no Someday do `Work/Tasks/Lirio Site tasks.md` (vault Obsidian).
 
 **A busca não tem ícone no header mobile.** Decisão deliberada para não espremer um quarto
 ícone ali (WhatsApp, carrinho, hambúrguer já ocupam a faixa); o caminho é o menu
